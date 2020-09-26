@@ -710,6 +710,65 @@
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <rect key="contentRect" x="425" y="461" width="550" height="450"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+                        <toolbar key="toolbar" implicitIdentifier="17C2ADA2-9D0C-4C9C-AC70-61DB73A84D04" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="Zct-Tf-uyL">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="sKS-9i-OEv"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="LBu-Wf-T4R"/>
+                                <toolbarItem implicitItemIdentifier="4E8BB950-E360-4541-9422-08446C265E3D" label="" paletteLabel="" image="NSAddTemplate" sizingBehavior="auto" id="uJl-rc-YMl">
+                                    <nil key="toolTip"/>
+                                    <button key="view" verticalHuggingPriority="750" id="7vc-9d-MR0">
+                                        <rect key="frame" x="0.0" y="14" width="127" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSAddTemplate" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Tgb-zQ-9Uq">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="FE6EB03C-099C-4C5D-B60E-A662A74AE488" label="" paletteLabel="" image="NSTouchBarDeleteTemplate" sizingBehavior="auto" id="5dh-vO-6nQ">
+                                    <nil key="toolTip"/>
+                                    <button key="view" verticalHuggingPriority="750" id="gGq-BY-4JY">
+                                        <rect key="frame" x="0.0" y="14" width="127" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSTouchBarDeleteTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9MY-Dk-OkP">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="4A2396C6-F4CD-487C-9737-1056B8AA373C" label="" paletteLabel="" image="NSMultipleDocuments" sizingBehavior="auto" id="TVy-ol-0Sx">
+                                    <nil key="toolTip"/>
+                                    <button key="view" verticalHuggingPriority="750" id="LqI-EX-OVn">
+                                        <rect key="frame" x="0.0" y="14" width="127" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSMultipleDocuments" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="E51-0H-75l">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="F36BA9A8-7FCE-4871-B1EF-03872F61BF5D" label="" paletteLabel="" image="NSSmartBadgeTemplate" sizingBehavior="auto" id="HU0-Rh-0yZ">
+                                    <nil key="toolTip"/>
+                                    <button key="view" verticalHuggingPriority="750" id="Dw0-eM-szb">
+                                        <rect key="frame" x="0.0" y="14" width="127" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSSmartBadgeTemplate" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="NjB-rT-CvR">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                </toolbarItem>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="LBu-Wf-T4R"/>
+                                <toolbarItem reference="uJl-rc-YMl"/>
+                                <toolbarItem reference="sKS-9i-OEv"/>
+                                <toolbarItem reference="TVy-ol-0Sx"/>
+                                <toolbarItem reference="HU0-Rh-0yZ"/>
+                                <toolbarItem reference="sKS-9i-OEv"/>
+                                <toolbarItem reference="5dh-vO-6nQ"/>
+                            </defaultToolbarItems>
+                        </toolbar>
                         <connections>
                             <outlet property="delegate" destination="9Oo-j1-few" id="Hdc-hc-pdX"/>
                         </connections>
@@ -1536,4 +1595,10 @@
             <point key="canvasLocation" x="1113" y="2596"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NSAddTemplate" width="11" height="11"/>
+        <image name="NSMultipleDocuments" width="32" height="32"/>
+        <image name="NSSmartBadgeTemplate" width="14" height="14"/>
+        <image name="NSTouchBarDeleteTemplate" width="15" height="30"/>
+    </resources>
 </document>
