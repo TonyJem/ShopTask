@@ -25,6 +25,8 @@ class ViewController: NSViewController {
     var saturdayWorkHours = Shop.WorkHours(from: "09:00", to: "21:00")
     var sundayWorkHours = Shop.WorkHours(from: "09:00", to: "21:00")
     
+    var hoursAsStingInArray: [String] = []
+    
     //    MARK: - Start Here
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +42,8 @@ class ViewController: NSViewController {
         //  Initialize testShop:
         testShop = Shop(name: testShopName, address: testShopAddress, workSchedule: schedule)
         
+        populateWorkingHoursArray()
+        print(hoursAsStingInArray)
     }
     
     override var representedObject: Any? {
@@ -55,6 +59,16 @@ class ViewController: NSViewController {
             hoursInString = "\(dayHours.from) - \(dayHours.to)"
         }
         return hoursInString
+    }
+    
+    func populateWorkingHoursArray(){
+        hoursAsStingInArray.append(getHoursInString(for: testShop.workSchedule.monday))
+        hoursAsStingInArray.append(getHoursInString(for: testShop.workSchedule.tuesday))
+        hoursAsStingInArray.append(getHoursInString(for: testShop.workSchedule.wednesday))
+        hoursAsStingInArray.append(getHoursInString(for: testShop.workSchedule.thursday))
+        hoursAsStingInArray.append(getHoursInString(for: testShop.workSchedule.friday))
+        hoursAsStingInArray.append(getHoursInString(for: testShop.workSchedule.saturday))
+        hoursAsStingInArray.append(getHoursInString(for: testShop.workSchedule.sunday))
     }
     
     //    MARK: - Actions
