@@ -101,7 +101,7 @@ class ViewController: NSViewController {
         hoursAsStingInArrayUpdated.append(hoursAsStingInArray[0])
         for item in 1...6{
             if hoursAsStingInArray[item] == hoursAsStingInArray[item - 1]{
-//                hoursAsStingInArrayUpdated.append("")
+                //                hoursAsStingInArrayUpdated.append("")
             } else {
                 hoursAsStingInArrayUpdated.append(hoursAsStingInArray[item])
                 registeredLeftItems.append(item + 1)
@@ -137,17 +137,17 @@ class ViewController: NSViewController {
             switch rangeToRomanian {
             case "I-I":
                 rangeToRomanian = "I"
-                case "II-II":
+            case "II-II":
                 rangeToRomanian = "II"
-                case "III-III":
+            case "III-III":
                 rangeToRomanian = "III"
-                case "IV-IV":
+            case "IV-IV":
                 rangeToRomanian = "IV"
-                case "V-V":
+            case "V-V":
                 rangeToRomanian = "V"
-                case "VI-VI":
+            case "VI-VI":
                 rangeToRomanian = "VI"
-                case "VII-VII":
+            case "VII-VII":
                 rangeToRomanian = "VII"
             default: break
             }
