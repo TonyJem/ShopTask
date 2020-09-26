@@ -710,7 +710,7 @@
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <rect key="contentRect" x="425" y="461" width="550" height="450"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
-                        <toolbar key="toolbar" implicitIdentifier="17C2ADA2-9D0C-4C9C-AC70-61DB73A84D04" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="Zct-Tf-uyL">
+                        <toolbar key="toolbar" implicitIdentifier="17C2ADA2-9D0C-4C9C-AC70-61DB73A84D04" autosavesConfiguration="NO" displayMode="iconOnly" sizeMode="regular" id="Zct-Tf-uyL">
                             <allowedToolbarItems>
                                 <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="sKS-9i-OEv"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="LBu-Wf-T4R"/>
@@ -719,7 +719,7 @@
                                     <button key="view" verticalHuggingPriority="750" id="7vc-9d-MR0">
                                         <rect key="frame" x="0.0" y="14" width="127" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSAddTemplate" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Tgb-zQ-9Uq">
+                                        <buttonCell key="cell" type="roundTextured" alternateTitle="ALTERNATE TITLE" bezelStyle="texturedRounded" image="NSAddTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Tgb-zQ-9Uq">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
@@ -767,6 +767,7 @@
                                 <toolbarItem reference="HU0-Rh-0yZ"/>
                                 <toolbarItem reference="sKS-9i-OEv"/>
                                 <toolbarItem reference="5dh-vO-6nQ"/>
+                                <toolbarItem reference="sKS-9i-OEv"/>
                             </defaultToolbarItems>
                         </toolbar>
                         <connections>
