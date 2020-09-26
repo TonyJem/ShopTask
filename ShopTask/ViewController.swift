@@ -24,8 +24,6 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(mondayWorkHours)
-        
         let schedule = Shop.WorkSchedule(monday: mondayWorkHours,
                                          tuesday: tuesdayWorkHours,
                                          wednesday: wednesdayWorkHours,
@@ -33,47 +31,9 @@ class ViewController: NSViewController {
                                          friday: nil,
                                          saturday: saturdayWorkHours,
                                          sunday: sundayWorkHours)
-        if let mondayHours = schedule.monday{
-            print(mondayHours)
-        } else {
-            print("Closed")
-        }
-        
-        if let fridayHours = schedule.friday{
-            print(fridayHours)
-        } else {
-            print("Closed")
-        }
         
         testShop = Shop(name: "TestName", address: "TestAddress", workSchedule: schedule)
         
-        print(testShop.name)
-        print(testShop.address)
-        
-        if let mondayHours = testShop.workSchedule.monday{
-            print("Shop say: \(mondayHours)")
-        } else {
-            print("Shop say: Closed")
-        }
-        
-        if let fridayHours = testShop.workSchedule.friday{
-            print("Shop say: \(fridayHours)")
-        } else {
-            print("Shop say: Closed")
-        }
-        
-        print("Test function: getHoursInString")
-        let dayHours1 = getHoursInString(for: testShop.workSchedule.monday)
-        print("1: \(dayHours1)")
-        
-        let dayHours2 = getHoursInString(for: testShop.workSchedule.tuesday)
-        print("2: \(dayHours2)")
-        
-        let dayHours5 = getHoursInString(for: testShop.workSchedule.friday)
-        print("5: \(dayHours5)")
-
-        
-        //         Do any additional setup after loading the view.
     }
     
     override var representedObject: Any? {
