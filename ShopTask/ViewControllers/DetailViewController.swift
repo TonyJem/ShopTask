@@ -8,10 +8,25 @@
 import Cocoa
 
 class DetailViewController: NSViewController {
-
+    //    MARK: Outlets:
+    //    @IBOutlet var ImageView: NSImageView!
+    
+    @IBOutlet var shopNameLabel: NSTextField!
+    @IBOutlet var shopAddressLabel: NSTextField!
+    
+    
+    //    MARK: - StartHere:
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
+        
+        shopNameLabel.stringValue = ""
+        shopAddressLabel.stringValue = ""
+        
     }
     
+    //    MARK: - Methods:
+    func shopSelected(name: String, address: String) {
+        shopNameLabel.stringValue = name
+        shopAddressLabel.stringValue = address
+    }
 }

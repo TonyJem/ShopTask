@@ -1050,6 +1050,10 @@
                             <constraint firstAttribute="bottom" secondItem="RHZ-7V-Xgj" secondAttribute="bottom" constant="20" id="rNI-Rd-gba"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="shopAddressLabel" destination="3eI-n8-p47" id="jgd-0o-zBe"/>
+                        <outlet property="shopNameLabel" destination="20I-9g-7oV" id="iz5-fb-jdm"/>
+                    </connections>
                 </viewController>
                 <customObject id="SAN-68-wmy" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
