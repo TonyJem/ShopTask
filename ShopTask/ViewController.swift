@@ -33,9 +33,14 @@ class ViewController: NSViewController {
     
     var myWorkHours = WorkHours(from: "9:00", to: "10:00")
 
-    var mySchedule = WorkSchedule()
-
-    var myShop = Shop(name: "ShopName", address: "Vilnius", workSchedule: mySchedule)
+//    var mySchedule = WorkSchedule()
+    
+    var mySchedule = WorkSchedule(monday: nil, tuesday: nil, wednesday: nil, thursday: nil, friday: nil, saturday: nil, sunday: nil)
+    
+    mySchedule.monday = mondayWorkHours
+    
+    
+//    var myShop = Shop(name: "ShopName", address: "Vilnius", workSchedule: mySchedule)
 //    Cia Gaunu klaida: Cannot use instance member 'mySchedule' within property initializer; property initializers run before 'self' is available
     
     
