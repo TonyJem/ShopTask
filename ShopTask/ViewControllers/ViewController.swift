@@ -45,6 +45,11 @@ class ViewController: NSViewController {
                                          sunday: sundayWorkHours)
         //  Initialize testShop:
         testShop = Shop(name: testShopName, address: testShopAddress, workSchedule: schedule)
+        testShop1 = Shop(name: testShopName, address: testShopAddress, workSchedule: schedule)
+        testShop2 = Shop(name: testShopName, address: testShopAddress, workSchedule: schedule)
+        testShop3 = Shop(name: testShopName, address: testShopAddress, workSchedule: schedule)
+        
+        var shops: [Shop] =[testShop, testShop1, testShop2, testShop3]
         
         populateWorkingHoursArray()
         
