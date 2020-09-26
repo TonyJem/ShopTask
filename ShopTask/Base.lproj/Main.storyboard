@@ -706,13 +706,475 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="ShopTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="835" height="511"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="20" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PGn-Gl-xY3">
+                                <rect key="frame" x="268" y="94" width="300" height="324"/>
+                                <subviews>
+                                    <stackView distribution="fillEqually" orientation="horizontal" alignment="centerY" spacing="19" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bsr-00-kq6">
+                                        <rect key="frame" x="0.0" y="308" width="300" height="16"/>
+                                        <subviews>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nkJ-6b-dqn">
+                                                <rect key="frame" x="-2" y="0.0" width="136" height="16"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="132" id="zpx-Uw-reJ"/>
+                                                </constraints>
+                                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Day:" id="BSn-Eg-gdA">
+                                                    <font key="font" usesAppearanceFont="YES"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UOH-Fe-l4M">
+                                                <rect key="frame" x="149" y="0.0" width="69" height="16"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="65" id="kHI-g2-nns"/>
+                                                </constraints>
+                                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Opens:" id="2On-9W-lzJ">
+                                                    <font key="font" usesAppearanceFont="YES"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jk4-TA-GTX">
+                                                <rect key="frame" x="233" y="0.0" width="69" height="16"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="65" id="5qt-DX-ln3"/>
+                                                </constraints>
+                                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Closes:" id="Y5c-qq-eon">
+                                                    <font key="font" usesAppearanceFont="YES"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                    <stackView distribution="fillEqually" orientation="horizontal" alignment="centerY" spacing="19" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iio-Yi-SiJ">
+                                        <rect key="frame" x="0.0" y="264" width="300" height="24"/>
+                                        <subviews>
+                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DTs-dW-Bd4">
+                                                <rect key="frame" x="-6" y="-6" width="144" height="32"/>
+                                                <buttonCell key="cell" type="push" title="Monday" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" inset="2" id="GXz-dC-M0S">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                            </button>
+                                            <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="N8y-ad-Rcy">
+                                                <rect key="frame" x="151" y="0.0" width="68" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="65" id="LYj-9W-h8u"/>
+                                                </constraints>
+                                                <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="BKj-eT-VoF">
+                                                    <font key="font" metaFont="system"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="-627472800">
+                                                        <!--1981-02-12 14:00:00 +0000-->
+                                                    </date>
+                                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <datePickerElements key="datePickerElements" hour="YES" minute="YES"/>
+                                                </datePickerCell>
+                                            </datePicker>
+                                            <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HQi-Z6-PU9">
+                                                <rect key="frame" x="235" y="0.0" width="68" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="65" id="5Jz-ag-RqV"/>
+                                                </constraints>
+                                                <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="4XP-eC-30W">
+                                                    <font key="font" metaFont="system"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="-595929600">
+                                                        <!--1982-02-12 16:00:00 +0000-->
+                                                    </date>
+                                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <datePickerElements key="datePickerElements" hour="YES" minute="YES"/>
+                                                </datePickerCell>
+                                            </datePicker>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                    <stackView distribution="fillEqually" orientation="horizontal" alignment="centerY" spacing="19" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yDF-N2-5Ap">
+                                        <rect key="frame" x="0.0" y="220" width="300" height="24"/>
+                                        <subviews>
+                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lZR-vl-okP">
+                                                <rect key="frame" x="-6" y="-6" width="144" height="32"/>
+                                                <buttonCell key="cell" type="push" title="Tuesday" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" inset="2" id="3T4-4G-xb9">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                            </button>
+                                            <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="owB-Ce-cIZ">
+                                                <rect key="frame" x="151" y="0.0" width="68" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="65" id="Ozc-RZ-wpo"/>
+                                                </constraints>
+                                                <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="f40-eS-ug4">
+                                                    <font key="font" metaFont="system"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="-627472800">
+                                                        <!--1981-02-12 14:00:00 +0000-->
+                                                    </date>
+                                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <datePickerElements key="datePickerElements" hour="YES" minute="YES"/>
+                                                </datePickerCell>
+                                            </datePicker>
+                                            <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="X9V-sM-9P8">
+                                                <rect key="frame" x="235" y="0.0" width="68" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="65" id="taO-p3-Wm4"/>
+                                                </constraints>
+                                                <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="4tG-fi-fPX">
+                                                    <font key="font" metaFont="system"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="-595929600">
+                                                        <!--1982-02-12 16:00:00 +0000-->
+                                                    </date>
+                                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <datePickerElements key="datePickerElements" hour="YES" minute="YES"/>
+                                                </datePickerCell>
+                                            </datePicker>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                    <stackView distribution="fillEqually" orientation="horizontal" alignment="centerY" spacing="19" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nA5-X9-xPP">
+                                        <rect key="frame" x="0.0" y="176" width="300" height="24"/>
+                                        <subviews>
+                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6US-9z-0Hu">
+                                                <rect key="frame" x="-6" y="-6" width="144" height="32"/>
+                                                <buttonCell key="cell" type="push" title="Wednesday" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" inset="2" id="5Vc-cI-757">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                            </button>
+                                            <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8Iu-0b-18B">
+                                                <rect key="frame" x="151" y="0.0" width="68" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="65" id="dcE-Co-fEf"/>
+                                                </constraints>
+                                                <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="ziO-ZM-wiX">
+                                                    <font key="font" metaFont="system"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="-627472800">
+                                                        <!--1981-02-12 14:00:00 +0000-->
+                                                    </date>
+                                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <datePickerElements key="datePickerElements" hour="YES" minute="YES"/>
+                                                </datePickerCell>
+                                            </datePicker>
+                                            <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eoY-7L-MmF">
+                                                <rect key="frame" x="235" y="0.0" width="68" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="65" id="fLm-RR-c9e"/>
+                                                </constraints>
+                                                <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="ccu-m6-hUg">
+                                                    <font key="font" metaFont="system"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="-595929600">
+                                                        <!--1982-02-12 16:00:00 +0000-->
+                                                    </date>
+                                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <datePickerElements key="datePickerElements" hour="YES" minute="YES"/>
+                                                </datePickerCell>
+                                            </datePicker>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                    <stackView distribution="fillEqually" orientation="horizontal" alignment="centerY" spacing="19" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BTF-68-M4f">
+                                        <rect key="frame" x="0.0" y="132" width="300" height="24"/>
+                                        <subviews>
+                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fho-E3-Xhb">
+                                                <rect key="frame" x="-6" y="-6" width="144" height="32"/>
+                                                <buttonCell key="cell" type="push" title="Thursday" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" inset="2" id="K6F-TD-K4W">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                            </button>
+                                            <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DE2-lo-15e">
+                                                <rect key="frame" x="151" y="0.0" width="68" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="65" id="cLd-ku-dXD"/>
+                                                </constraints>
+                                                <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="7Xz-xa-vGR">
+                                                    <font key="font" metaFont="system"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="-627472800">
+                                                        <!--1981-02-12 14:00:00 +0000-->
+                                                    </date>
+                                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <datePickerElements key="datePickerElements" hour="YES" minute="YES"/>
+                                                </datePickerCell>
+                                            </datePicker>
+                                            <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LIK-3X-aI3">
+                                                <rect key="frame" x="235" y="0.0" width="68" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="65" id="wlJ-bf-jIY"/>
+                                                </constraints>
+                                                <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="fdj-4Q-C0i">
+                                                    <font key="font" metaFont="system"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="-595929600">
+                                                        <!--1982-02-12 16:00:00 +0000-->
+                                                    </date>
+                                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <datePickerElements key="datePickerElements" hour="YES" minute="YES"/>
+                                                </datePickerCell>
+                                            </datePicker>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                    <stackView distribution="fillEqually" orientation="horizontal" alignment="centerY" spacing="19" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1C8-m6-8YZ">
+                                        <rect key="frame" x="0.0" y="88" width="300" height="24"/>
+                                        <subviews>
+                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QGR-Fc-yjh">
+                                                <rect key="frame" x="-6" y="-6" width="144" height="32"/>
+                                                <buttonCell key="cell" type="push" title="Friday" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" inset="2" id="6BW-dq-Ifv">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                            </button>
+                                            <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GKs-II-Osh">
+                                                <rect key="frame" x="151" y="0.0" width="68" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="65" id="brv-VX-fyx"/>
+                                                </constraints>
+                                                <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="fGD-nr-H9m">
+                                                    <font key="font" metaFont="system"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="-627472800">
+                                                        <!--1981-02-12 14:00:00 +0000-->
+                                                    </date>
+                                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <datePickerElements key="datePickerElements" hour="YES" minute="YES"/>
+                                                </datePickerCell>
+                                            </datePicker>
+                                            <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jDQ-b3-YSL">
+                                                <rect key="frame" x="235" y="0.0" width="68" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="65" id="t4q-B8-ELj"/>
+                                                </constraints>
+                                                <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="mtR-uH-rbU">
+                                                    <font key="font" metaFont="system"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="-595929600">
+                                                        <!--1982-02-12 16:00:00 +0000-->
+                                                    </date>
+                                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <datePickerElements key="datePickerElements" hour="YES" minute="YES"/>
+                                                </datePickerCell>
+                                            </datePicker>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                    <stackView distribution="fillEqually" orientation="horizontal" alignment="centerY" spacing="19" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p8p-hP-HZc">
+                                        <rect key="frame" x="0.0" y="44" width="300" height="24"/>
+                                        <subviews>
+                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vOM-Or-wRA">
+                                                <rect key="frame" x="-6" y="-6" width="144" height="32"/>
+                                                <buttonCell key="cell" type="push" title="Saturday" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" inset="2" id="hRX-Bl-f2U">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                            </button>
+                                            <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VXA-ST-jLF">
+                                                <rect key="frame" x="151" y="0.0" width="68" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="65" id="u8z-z2-8MW"/>
+                                                </constraints>
+                                                <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="lwF-Bb-XYg">
+                                                    <font key="font" metaFont="system"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="-627472800">
+                                                        <!--1981-02-12 14:00:00 +0000-->
+                                                    </date>
+                                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <datePickerElements key="datePickerElements" hour="YES" minute="YES"/>
+                                                </datePickerCell>
+                                            </datePicker>
+                                            <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hfK-Xw-ZZC">
+                                                <rect key="frame" x="235" y="0.0" width="68" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="65" id="WAM-44-pxv"/>
+                                                </constraints>
+                                                <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="aZ9-T1-Ygo">
+                                                    <font key="font" metaFont="system"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="-595929600">
+                                                        <!--1982-02-12 16:00:00 +0000-->
+                                                    </date>
+                                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <datePickerElements key="datePickerElements" hour="YES" minute="YES"/>
+                                                </datePickerCell>
+                                            </datePicker>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                    <stackView distribution="fillEqually" orientation="horizontal" alignment="centerY" spacing="19" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2sB-cf-dv6">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="24"/>
+                                        <subviews>
+                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kPb-Fp-9jn">
+                                                <rect key="frame" x="-6" y="-6" width="144" height="32"/>
+                                                <buttonCell key="cell" type="push" title="Sunday" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" inset="2" id="3aH-1U-fH5">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                            </button>
+                                            <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vYA-Dz-gty">
+                                                <rect key="frame" x="151" y="0.0" width="68" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="65" id="OXj-cm-sJe"/>
+                                                </constraints>
+                                                <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="gSa-bV-v1a">
+                                                    <font key="font" metaFont="system"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="-627472800">
+                                                        <!--1981-02-12 14:00:00 +0000-->
+                                                    </date>
+                                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <datePickerElements key="datePickerElements" hour="YES" minute="YES"/>
+                                                </datePickerCell>
+                                            </datePicker>
+                                            <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6LL-dR-xMC">
+                                                <rect key="frame" x="235" y="0.0" width="68" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="65" id="60J-1K-uet"/>
+                                                </constraints>
+                                                <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="mHN-zU-3eM">
+                                                    <font key="font" metaFont="system"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="-595929600">
+                                                        <!--1982-02-12 16:00:00 +0000-->
+                                                    </date>
+                                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <datePickerElements key="datePickerElements" hour="YES" minute="YES"/>
+                                                </datePickerCell>
+                                            </datePicker>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="1C8-m6-8YZ" secondAttribute="trailing" id="9Ez-ep-xrE"/>
+                                    <constraint firstAttribute="trailing" secondItem="p8p-hP-HZc" secondAttribute="trailing" id="9P7-j5-5r4"/>
+                                    <constraint firstItem="Bsr-00-kq6" firstAttribute="leading" secondItem="PGn-Gl-xY3" secondAttribute="leading" id="ECo-TH-OxW"/>
+                                    <constraint firstItem="BTF-68-M4f" firstAttribute="leading" secondItem="PGn-Gl-xY3" secondAttribute="leading" id="Jot-kw-CtG"/>
+                                    <constraint firstAttribute="trailing" secondItem="2sB-cf-dv6" secondAttribute="trailing" id="Jy8-bP-xBd"/>
+                                    <constraint firstItem="nA5-X9-xPP" firstAttribute="leading" secondItem="PGn-Gl-xY3" secondAttribute="leading" id="Oiw-RY-U0R"/>
+                                    <constraint firstAttribute="trailing" secondItem="nA5-X9-xPP" secondAttribute="trailing" id="P7t-uD-eak"/>
+                                    <constraint firstAttribute="trailing" secondItem="BTF-68-M4f" secondAttribute="trailing" id="YDH-ab-Wum"/>
+                                    <constraint firstItem="2sB-cf-dv6" firstAttribute="leading" secondItem="PGn-Gl-xY3" secondAttribute="leading" id="ahP-MF-jv8"/>
+                                    <constraint firstItem="p8p-hP-HZc" firstAttribute="leading" secondItem="PGn-Gl-xY3" secondAttribute="leading" id="dSx-0O-3y0"/>
+                                    <constraint firstAttribute="trailing" secondItem="yDF-N2-5Ap" secondAttribute="trailing" id="mkg-HI-5RX"/>
+                                    <constraint firstAttribute="width" constant="300" id="nQD-5e-bWK"/>
+                                    <constraint firstItem="yDF-N2-5Ap" firstAttribute="leading" secondItem="PGn-Gl-xY3" secondAttribute="leading" id="pDi-bq-Shx"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bsr-00-kq6" secondAttribute="trailing" id="q1w-eR-Dpb"/>
+                                    <constraint firstItem="1C8-m6-8YZ" firstAttribute="leading" secondItem="PGn-Gl-xY3" secondAttribute="leading" id="s29-An-z4i"/>
+                                    <constraint firstItem="Iio-Yi-SiJ" firstAttribute="leading" secondItem="PGn-Gl-xY3" secondAttribute="leading" id="tSg-Wq-2ox"/>
+                                    <constraint firstAttribute="trailing" secondItem="Iio-Yi-SiJ" secondAttribute="trailing" id="z9Z-IM-2IF"/>
+                                </constraints>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="PGn-Gl-xY3" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="sCg-Sy-6EP"/>
+                            <constraint firstItem="PGn-Gl-xY3" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="v4j-Jy-D9q"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="75" y="830"/>
         </scene>
     </scenes>
 </document>
