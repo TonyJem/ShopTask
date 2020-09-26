@@ -9,8 +9,13 @@ import Foundation
 import Cocoa
 
 class ViewController: NSViewController {
-    //    MARK: Properties
+    //    MARK: - Outlets
+    
+    //    MARK: - Properties
     var testShop: Shop!
+    
+    var testShopName = "TestName"
+    var testShopAddress = "TestAddress"
     
     var mondayWorkHours = Shop.WorkHours(from: "09:00", to: "21:00")
     var tuesdayWorkHours = Shop.WorkHours(from: "09:00", to: "21:00")
@@ -24,6 +29,7 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //  Create schedule for shop:
         let schedule = Shop.WorkSchedule(monday: mondayWorkHours,
                                          tuesday: tuesdayWorkHours,
                                          wednesday: wednesdayWorkHours,
@@ -31,8 +37,8 @@ class ViewController: NSViewController {
                                          friday: nil,
                                          saturday: saturdayWorkHours,
                                          sunday: sundayWorkHours)
-        
-        testShop = Shop(name: "TestName", address: "TestAddress", workSchedule: schedule)
+        //  Initialize testShop:
+        testShop = Shop(name: testShopName, address: testShopAddress, workSchedule: schedule)
         
     }
     
@@ -41,8 +47,8 @@ class ViewController: NSViewController {
             // Update the view, if already loaded.
         }
     }
-        //    MARK: - Methods
-        
+    //    MARK: - Methods
+    
     func getHoursInString(for hours: Shop.WorkHours?) -> String {
         var hoursInString = "Closed"
         if let dayHours = hours{
@@ -51,6 +57,6 @@ class ViewController: NSViewController {
         return hoursInString
     }
     
-    
+    //    MARK: - Actions
 }
 
