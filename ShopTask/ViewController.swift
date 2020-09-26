@@ -26,6 +26,7 @@ class ViewController: NSViewController {
     var sundayWorkHours = Shop.WorkHours(from: "09:00", to: "21:00")
     
     var hoursAsStingInArray: [String] = []
+    let daysAsStingInArray: [String] = ["I","II","III","IV","V","VI","VII"]
     
     //    MARK: - Start Here
     override func viewDidLoad() {
