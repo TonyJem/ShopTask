@@ -28,6 +28,9 @@ class ViewController: NSViewController {
     var hoursAsStingInArray: [String] = []
     let daysAsStingInArray: [String] = ["I","II","III","IV","V","VI","VII"]
     
+    var daysToShow: [String] = []
+    var hoursToShow: [String] = []
+    
     //    MARK: - Start Here
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +47,11 @@ class ViewController: NSViewController {
         testShop = Shop(name: testShopName, address: testShopAddress, workSchedule: schedule)
         
         populateWorkingHoursArray()
-        print(hoursAsStingInArray)
+        
+        createResults()
+        print(hoursToShow)
+        print(daysToShow)
+        
     }
     
     override var representedObject: Any? {
@@ -71,6 +78,23 @@ class ViewController: NSViewController {
         hoursAsStingInArray.append(getHoursInString(for: testShop.workSchedule.saturday))
         hoursAsStingInArray.append(getHoursInString(for: testShop.workSchedule.sunday))
     }
+    
+    func createResults(){
+        daysToShow.removeAll()
+        hoursToShow.removeAll()
+        
+        hoursToShow.append(hoursAsStingInArray[0])
+        daysToShow.append(daysAsStingInArray[0])
+        
+        for item in (1...6) {
+            if hoursAsStingInArray[item] != hoursAsStingInArray[item - 1] {
+                hoursToShow.append(hoursAsStingInArray[item])
+                daysToShow.append(daysAsStingInArray[item])
+            }
+        }
+    }
+    
+    
     
     //    MARK: - Actions
 }
