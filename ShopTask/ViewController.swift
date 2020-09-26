@@ -24,7 +24,7 @@ class ViewController: NSViewController {
     var fridayWorkHours = Shop.WorkHours(from: "", to: "")
     var saturdayWorkHours = Shop.WorkHours(from: "09:00", to: "21:00")
     var sundayWorkHours = Shop.WorkHours(from: "09:00", to: "21:00")
-    
+        
     var hoursAsStingInArray: [String] = []
     var hoursAsStingInArrayUpdated: [String] = []
     var registeredLeftItems: [Int] = []
@@ -125,38 +125,41 @@ class ViewController: NSViewController {
     
     func formatStringFiguresToRomanianStyle(){
         for range in dayRanges{
-            var rangeToRomanian = range
-            rangeToRomanian = rangeToRomanian.replacingOccurrences(of: "1", with: "I")
-            rangeToRomanian = rangeToRomanian.replacingOccurrences(of: "2", with: "II")
-            rangeToRomanian = rangeToRomanian.replacingOccurrences(of: "3", with: "III")
-            rangeToRomanian = rangeToRomanian.replacingOccurrences(of: "4", with: "IV")
-            rangeToRomanian = rangeToRomanian.replacingOccurrences(of: "5", with: "V")
-            rangeToRomanian = rangeToRomanian.replacingOccurrences(of: "6", with: "VI")
-            rangeToRomanian = rangeToRomanian.replacingOccurrences(of: "7", with: "VII")
+            var rangeWithNumber = range
             
-            switch rangeToRomanian {
+            rangeWithNumber = findAndReplace(in: rangeWithNumber, number: "1", with: "I")
+            rangeWithNumber = findAndReplace(in: rangeWithNumber, number: "2", with: "II")
+            rangeWithNumber = findAndReplace(in: rangeWithNumber, number: "3", with: "III")
+            rangeWithNumber = findAndReplace(in: rangeWithNumber, number: "4", with: "IV")
+            rangeWithNumber = findAndReplace(in: rangeWithNumber, number: "5", with: "V")
+            rangeWithNumber = findAndReplace(in: rangeWithNumber, number: "6", with: "VI")
+            rangeWithNumber = findAndReplace(in: rangeWithNumber, number: "7", with: "VII")
+            
+            switch rangeWithNumber {
             case "I-I":
-                rangeToRomanian = "I"
+                rangeWithNumber = "I"
             case "II-II":
-                rangeToRomanian = "II"
+                rangeWithNumber = "II"
             case "III-III":
-                rangeToRomanian = "III"
+                rangeWithNumber = "III"
             case "IV-IV":
-                rangeToRomanian = "IV"
+                rangeWithNumber = "IV"
             case "V-V":
-                rangeToRomanian = "V"
+                rangeWithNumber = "V"
             case "VI-VI":
-                rangeToRomanian = "VI"
+                rangeWithNumber = "VI"
             case "VII-VII":
-                rangeToRomanian = "VII"
+                rangeWithNumber = "VII"
             default: break
             }
-            
-            dayRangesRomanian.append(rangeToRomanian)
+            dayRangesRomanian.append(rangeWithNumber)
         }
     }
     
-    
+    func findAndReplace(in rangeAsString: String, number numberAsString: String, with symbol: String) -> String {
+        let newStringWithReplacedSymbol = rangeAsString.replacingOccurrences(of: numberAsString, with: symbol)
+        return newStringWithReplacedSymbol
+    }
     
     
     
