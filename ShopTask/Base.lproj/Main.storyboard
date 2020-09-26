@@ -678,7 +678,7 @@
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-26" y="435"/>
+            <point key="canvasLocation" x="-28" y="210"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
@@ -708,7 +708,7 @@
                 <windowController id="9Oo-j1-few" sceneMemberID="viewController">
                     <window key="window" title="Shops" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="JbI-23-zh8">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-                        <rect key="contentRect" x="425" y="461" width="480" height="270"/>
+                        <rect key="contentRect" x="425" y="461" width="550" height="450"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
                         <connections>
                             <outlet property="delegate" destination="9Oo-j1-few" id="Hdc-hc-pdX"/>
@@ -719,7 +719,7 @@
                     </connections>
                 </windowController>
             </objects>
-            <point key="canvasLocation" x="-14" y="701"/>
+            <point key="canvasLocation" x="-14" y="570"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="LyK-Hw-G73">
@@ -730,7 +730,7 @@
                         <splitViewItem id="jNU-Rp-hnq"/>
                     </splitViewItems>
                     <splitView key="splitView" dividerStyle="thin" vertical="YES" id="Kdy-mx-S0a">
-                        <rect key="frame" x="0.0" y="0.0" width="550" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="550" height="450"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <connections>
                             <outlet property="delegate" destination="WSD-0O-NEL" id="aAc-KE-0oT"/>
@@ -751,17 +751,17 @@
             <objects>
                 <viewController id="rLi-Kd-EeM" customClass="TableViewController" customModule="ShopTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="TrD-Ha-zqz">
-                        <rect key="frame" x="0.0" y="0.0" width="426" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="426" height="550"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3f-cI-MGC">
-                                <rect key="frame" x="0.0" y="0.0" width="426" height="300"/>
+                                <rect key="frame" x="0.0" y="0.0" width="426" height="550"/>
                                 <clipView key="contentView" id="OZ4-bH-Vzn">
-                                    <rect key="frame" x="1" y="0.0" width="424" height="299"/>
+                                    <rect key="frame" x="1" y="0.0" width="424" height="549"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="JWF-Yk-Ey1" viewBased="YES" id="Svx-It-TPp">
-                                            <rect key="frame" x="0.0" y="0.0" width="424" height="274"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="424" height="524"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -867,21 +867,21 @@
                 </viewController>
                 <customObject id="KTw-8z-AXd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-14" y="1776"/>
+            <point key="canvasLocation" x="-14" y="1922"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="QQ4-Ss-2Oj">
             <objects>
                 <viewController id="dlI-aQ-FSZ" customClass="DetailViewController" customModule="ShopTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="4v9-N3-jVw">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="301"/>
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="550"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="83" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RHZ-7V-Xgj">
-                                <rect key="frame" x="20" y="20" width="410" height="261"/>
+                                <rect key="frame" x="20" y="20" width="410" height="510"/>
                                 <subviews>
                                     <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="39" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kSn-Wl-spB">
-                                        <rect key="frame" x="172" y="190" width="67" height="71"/>
+                                        <rect key="frame" x="172" y="439" width="67" height="71"/>
                                         <subviews>
                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="20I-9g-7oV">
                                                 <rect key="frame" x="-2" y="55" width="71" height="16"/>
@@ -910,10 +910,10 @@
                                         </customSpacing>
                                     </stackView>
                                     <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BXH-na-j8R">
-                                        <rect key="frame" x="0.0" y="0.0" width="410" height="107"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="410" height="356"/>
                                         <subviews>
                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SCi-cq-StA">
-                                                <rect key="frame" x="-2" y="91" width="98" height="16"/>
+                                                <rect key="frame" x="-2" y="340" width="98" height="16"/>
                                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Working Hours:" id="pkZ-26-vUI">
                                                     <font key="font" usesAppearanceFont="YES"/>
                                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -921,13 +921,13 @@
                                                 </textFieldCell>
                                             </textField>
                                             <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mif-bx-XdC">
-                                                <rect key="frame" x="0.0" y="0.0" width="410" height="83"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="410" height="332"/>
                                                 <clipView key="contentView" id="zrE-Fy-tdg">
-                                                    <rect key="frame" x="1" y="0.0" width="408" height="82"/>
+                                                    <rect key="frame" x="1" y="0.0" width="408" height="331"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="V0v-Mp-KVd" viewBased="YES" id="ehg-7d-Dfe">
-                                                            <rect key="frame" x="0.0" y="0.0" width="408" height="57"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="408" height="306"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <size key="intercellSpacing" width="3" height="2"/>
                                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -1053,11 +1053,12 @@
                     <connections>
                         <outlet property="shopAddressLabel" destination="3eI-n8-p47" id="jgd-0o-zBe"/>
                         <outlet property="shopNameLabel" destination="20I-9g-7oV" id="iz5-fb-jdm"/>
+                        <outlet property="workingHoursStackView" destination="BXH-na-j8R" id="Gdx-e5-AAJ"/>
                     </connections>
                 </viewController>
                 <customObject id="SAN-68-wmy" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="460" y="1777"/>
+            <point key="canvasLocation" x="486" y="1922"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
@@ -1532,7 +1533,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1113" y="2399"/>
+            <point key="canvasLocation" x="1113" y="2596"/>
         </scene>
     </scenes>
 </document>

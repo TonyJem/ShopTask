@@ -13,6 +13,7 @@ class DetailViewController: NSViewController {
     
     @IBOutlet var shopNameLabel: NSTextField!
     @IBOutlet var shopAddressLabel: NSTextField!
+    @IBOutlet var workingHoursStackView: NSStackView!
     
     
     //    MARK: - StartHere:
@@ -21,6 +22,7 @@ class DetailViewController: NSViewController {
         
         shopNameLabel.stringValue = ""
         shopAddressLabel.stringValue = ""
+        workingHoursStackView.isHidden = true
         
     }
     
@@ -28,5 +30,6 @@ class DetailViewController: NSViewController {
     func shopSelected(name: String, address: String) {
         shopNameLabel.stringValue = name
         shopAddressLabel.stringValue = address
+        workingHoursStackView.isHidden = false
     }
 }
