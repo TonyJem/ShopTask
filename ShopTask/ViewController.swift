@@ -62,6 +62,17 @@ class ViewController: NSViewController {
             print("Shop say: Closed")
         }
         
+        print("Test function: getHoursInString")
+        let dayHours1 = getHoursInString(for: testShop.workSchedule.monday)
+        print("1: \(dayHours1)")
+        
+        let dayHours2 = getHoursInString(for: testShop.workSchedule.tuesday)
+        print("2: \(dayHours2)")
+        
+        let dayHours5 = getHoursInString(for: testShop.workSchedule.friday)
+        print("5: \(dayHours5)")
+
+        
         //         Do any additional setup after loading the view.
     }
     
@@ -69,6 +80,15 @@ class ViewController: NSViewController {
         didSet {
             // Update the view, if already loaded.
         }
+    }
+        //    MARK: - Methods
+        
+    func getHoursInString(for hours: Shop.WorkHours?) -> String {
+        var hoursInString = "Closed"
+        if let dayHours = hours{
+            hoursInString = "\(dayHours.from) - \(dayHours.to)"
+        }
+        return hoursInString
     }
     
     
