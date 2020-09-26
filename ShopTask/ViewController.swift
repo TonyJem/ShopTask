@@ -90,8 +90,11 @@ class ViewController: NSViewController {
             if hoursAsStingInArray[item] != hoursAsStingInArray[item - 1] {
                 hoursToShow.append(hoursAsStingInArray[item])
                 daysToShow.append(daysAsStingInArray[item])
+            } else {
+                daysToShow.append("")
             }
         }
+        
     }
     
     
