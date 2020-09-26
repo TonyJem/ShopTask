@@ -21,7 +21,7 @@ class TableViewController: NSViewController, NSTableViewDataSource, NSTableViewD
     
     var shops = [Shop]()
     
-    var testShopName = "TestName"
+    var testShopName = "TestName0"
     var testShopAddress = "TestAddress"
     
     var mondayWorkHours = Shop.WorkHours(from: "09:00", to: "21:00")
@@ -33,7 +33,6 @@ class TableViewController: NSViewController, NSTableViewDataSource, NSTableViewD
     var sundayWorkHours = Shop.WorkHours(from: "09:00", to: "21:00")
     
     
-    var arrayTextsForRow = [String]()
     
     //    MARK: - StartHere:
     override func viewDidLoad() {
@@ -50,29 +49,36 @@ class TableViewController: NSViewController, NSTableViewDataSource, NSTableViewD
                                          sunday: sundayWorkHours)
         //  Initialize testShops:
         testShop = Shop(name: testShopName, address: testShopAddress, workSchedule: schedule)
-        testShop1 = Shop(name: testShopName, address: testShopAddress, workSchedule: schedule)
-        testShop2 = Shop(name: testShopName, address: testShopAddress, workSchedule: schedule)
-        testShop3 = Shop(name: testShopName, address: testShopAddress, workSchedule: schedule)
+        testShop1 = Shop(name: "TestName1", address: "TestShopAddress1", workSchedule: schedule)
+        testShop2 = Shop(name: "TestName2", address: "TestShopAddress2", workSchedule: schedule)
+        testShop3 = Shop(name: "TestName3", address: "TestShopAddress3", workSchedule: schedule)
         
         //  Initialize array with testShops:
         shops = [testShop, testShop1, testShop2, testShop3]
         
-        arrayTextsForRow = ["Row1", "Row2", "Row3", "Row4"]
         
     }
     
     
     //    MARK: - TableView Methods:
     func numberOfRows(in tableView: NSTableView) -> Int {
-        return arrayTextsForRow.count
-        //        return shops.count
+        return shops.count
     }
     
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
         guard let vw = tableView.makeView(withIdentifier: tableColumn!.identifier, owner: self) as? NSTableCellView else {
             return nil
         }
-        vw.textField?.stringValue = arrayTextsForRow[row]
+        
+        switch tableColumn?.title {
+        
+        case "Name":
+            vw.textField?.stringValue = shops[row].name
+        case "Address":
+            vw.textField?.stringValue = shops[row].address
+        default:
+            vw.textField?.stringValue = ""
+        }
         return vw
     }
     
