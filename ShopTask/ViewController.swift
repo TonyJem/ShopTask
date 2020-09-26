@@ -9,7 +9,7 @@ import Foundation
 import Cocoa
 
 class ViewController: NSViewController {
-    
+    //    MARK: Properties
     var testShop: Shop!
     
     var mondayWorkHours = Shop.WorkHours(from: "09:00", to: "21:00")
@@ -20,18 +20,19 @@ class ViewController: NSViewController {
     var saturdayWorkHours = Shop.WorkHours(from: "09:00", to: "21:00")
     var sundayWorkHours = Shop.WorkHours(from: "09:00", to: "21:00")
     
+    //    MARK: - Start Here
     override func viewDidLoad() {
         super.viewDidLoad()
         
         print(mondayWorkHours)
         
         let schedule = Shop.WorkSchedule(monday: mondayWorkHours,
-                                     tuesday: tuesdayWorkHours,
-                                     wednesday: wednesdayWorkHours,
-                                     thursday: thursdayWorkHours,
-                                     friday: nil,
-                                     saturday: saturdayWorkHours,
-                                     sunday: sundayWorkHours)
+                                         tuesday: tuesdayWorkHours,
+                                         wednesday: wednesdayWorkHours,
+                                         thursday: thursdayWorkHours,
+                                         friday: nil,
+                                         saturday: saturdayWorkHours,
+                                         sunday: sundayWorkHours)
         if let mondayHours = schedule.monday{
             print(mondayHours)
         } else {
@@ -48,7 +49,7 @@ class ViewController: NSViewController {
         
         print(testShop.name)
         print(testShop.address)
-       
+        
         if let mondayHours = testShop.workSchedule.monday{
             print("Shop say: \(mondayHours)")
         } else {
@@ -60,7 +61,6 @@ class ViewController: NSViewController {
         } else {
             print("Shop say: Closed")
         }
-        
         
         //         Do any additional setup after loading the view.
     }
