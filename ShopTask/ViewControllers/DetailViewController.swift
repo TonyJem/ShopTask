@@ -20,24 +20,24 @@ class DetailViewController: NSViewController, NSTableViewDataSource, NSTableView
     //    MARK: - StartHere:
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         shopNameLabel.stringValue = ""
         shopAddressLabel.stringValue = ""
-        workingHoursStackView.isHidden = true
-        
-        addNewCollumn()
+//        workingHoursStackView.isHidden = true
     }
     
     //    MARK: - Methods:
     func shopSelected(name: String, address: String) {
+        
         shopNameLabel.stringValue = name
         shopAddressLabel.stringValue = address
-        workingHoursStackView.isHidden = false
+//        workingHoursStackView.isHidden = false
+        
+        workingHoursTableView.reloadData()
     }
     
     //    MARK: - TableView Methods:
     func numberOfRows(in tableView: NSTableView) -> Int {
-        return 10
+        return 5
     }
     
     
@@ -46,26 +46,24 @@ class DetailViewController: NSViewController, NSTableViewDataSource, NSTableView
             return nil
         }
         
-        
-        
         switch tableColumn?.title {
             
-        case "1col":
-            vw.textField?.stringValue = "1col"
-        case "Field":
-            vw.textField?.stringValue = "field"
+        case "col2":
+            vw.textField?.stringValue = "col2"
+        case "I":
+            vw.textField?.stringValue = "9:00 - 10:00"
         default:
             vw.textField?.stringValue = "Default"
-            tableColumn?.title = "Change"
         }
         return vw
     }
     
-    func addNewCollumn() {
-        let col = NSTableColumn(identifier: NSUserInterfaceItemIdentifier(rawValue: "col"))
-        col.minWidth = 100
-        
-        workingHoursTableView.addTableColumn(col)
+    func addNewColumn() {
+        let newColumn = NSTableColumn(identifier: NSUserInterfaceItemIdentifier(rawValue: "collumnID"))
+        newColumn.minWidth = 100
+        newColumn.title = "col2"
+        print(newColumn.identifier)
+        workingHoursTableView.addTableColumn(newColumn)
         
     }
     
