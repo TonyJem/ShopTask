@@ -22,7 +22,7 @@ class DetailViewController: NSViewController, NSTableViewDataSource, NSTableView
         super.viewDidLoad()
         shopNameLabel.stringValue = ""
         shopAddressLabel.stringValue = ""
-//        workingHoursStackView.isHidden = true
+        //        workingHoursStackView.isHidden = true
     }
     
     //    MARK: - Methods:
@@ -30,14 +30,14 @@ class DetailViewController: NSViewController, NSTableViewDataSource, NSTableView
         
         shopNameLabel.stringValue = name
         shopAddressLabel.stringValue = address
-//        workingHoursStackView.isHidden = false
+        //        workingHoursStackView.isHidden = false
         
         workingHoursTableView.reloadData()
     }
     
     //    MARK: - TableView Methods:
     func numberOfRows(in tableView: NSTableView) -> Int {
-        return 5
+        return 2
     }
     
     
@@ -48,27 +48,24 @@ class DetailViewController: NSViewController, NSTableViewDataSource, NSTableView
         
         switch tableColumn?.title {
             
-        case "col2":
-            vw.textField?.stringValue = "col2"
-        case "I":
+        case "1":
+            vw.textField?.stringValue = "20:00 - 22:00"
+        case "2":
+            vw.textField?.stringValue = "9:00 - 10:00"
+        case "3":
+            vw.textField?.stringValue = "9:00 - 10:00"
+        case "4":
+            vw.textField?.stringValue = "9:00 - 10:00"
+        case "5":
+            vw.textField?.stringValue = "9:00 - 10:00"
+        case "6":
+            vw.textField?.stringValue = "9:00 - 10:00"
+        case "7":
             vw.textField?.stringValue = "9:00 - 10:00"
         default:
-            vw.textField?.stringValue = "Default"
+            vw.textField?.stringValue = "N/A"
         }
         return vw
     }
-    
-    func addNewColumn() {
-        let newColumn = NSTableColumn(identifier: NSUserInterfaceItemIdentifier(rawValue: "collumnID"))
-        newColumn.minWidth = 100
-        newColumn.title = "col2"
-        print(newColumn.identifier)
-        workingHoursTableView.addTableColumn(newColumn)
-        
-    }
-    
-    
-    
-    
     
 }
