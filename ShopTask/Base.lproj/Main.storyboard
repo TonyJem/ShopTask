@@ -684,9 +684,8 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="Shop Details" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <connections>
@@ -699,7 +698,7 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1098" y="2532"/>
+            <point key="canvasLocation" x="1388" y="2482"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="IYV-bV-fhd">
@@ -934,14 +933,14 @@
             <objects>
                 <viewController id="dlI-aQ-FSZ" customClass="DetailViewController" customModule="ShopTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="4v9-N3-jVw">
-                        <rect key="frame" x="0.0" y="0.0" width="694" height="550"/>
+                        <rect key="frame" x="0.0" y="0.0" width="694" height="422"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="83" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RHZ-7V-Xgj">
-                                <rect key="frame" x="20" y="20" width="654" height="510"/>
+                                <rect key="frame" x="20" y="20" width="654" height="382"/>
                                 <subviews>
                                     <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="39" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kSn-Wl-spB">
-                                        <rect key="frame" x="294" y="439" width="67" height="71"/>
+                                        <rect key="frame" x="294" y="311" width="67" height="71"/>
                                         <subviews>
                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="20I-9g-7oV">
                                                 <rect key="frame" x="-2" y="55" width="71" height="16"/>
@@ -970,10 +969,10 @@
                                         </customSpacing>
                                     </stackView>
                                     <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BXH-na-j8R">
-                                        <rect key="frame" x="0.0" y="0.0" width="654" height="356"/>
+                                        <rect key="frame" x="0.0" y="104" width="654" height="124"/>
                                         <subviews>
                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SCi-cq-StA">
-                                                <rect key="frame" x="-2" y="340" width="98" height="16"/>
+                                                <rect key="frame" x="-2" y="108" width="98" height="16"/>
                                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Working Hours:" id="pkZ-26-vUI">
                                                     <font key="font" usesAppearanceFont="YES"/>
                                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -981,13 +980,13 @@
                                                 </textFieldCell>
                                             </textField>
                                             <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mif-bx-XdC">
-                                                <rect key="frame" x="0.0" y="0.0" width="654" height="332"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="654" height="100"/>
                                                 <clipView key="contentView" id="zrE-Fy-tdg">
-                                                    <rect key="frame" x="1" y="0.0" width="652" height="331"/>
+                                                    <rect key="frame" x="1" y="0.0" width="652" height="99"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" usesAutomaticRowHeights="YES" headerView="V0v-Mp-KVd" id="ehg-7d-Dfe">
-                                                            <rect key="frame" x="0.0" y="0.0" width="652" height="306"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="652" height="74"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <size key="intercellSpacing" width="3" height="2"/>
                                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -999,6 +998,9 @@
                                                         </tableView>
                                                     </subviews>
                                                 </clipView>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="Ysi-sf-6h2"/>
+                                                </constraints>
                                                 <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="z77-b1-RGt">
                                                     <rect key="frame" x="1" y="315" width="636" height="16"/>
                                                     <autoresizingMask key="autoresizingMask"/>
@@ -1026,6 +1028,16 @@
                                             <real value="3.4028234663852886e+38"/>
                                         </customSpacing>
                                     </stackView>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Tzi-fv-A5K">
+                                        <rect key="frame" x="231" y="-7" width="192" height="32"/>
+                                        <buttonCell key="cell" type="push" title="Edit Shop Working Hours" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ebS-23-IhL">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <segue destination="B8D-0N-5wS" kind="show" id="JYz-Ma-F5r"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="BXH-na-j8R" firstAttribute="leading" secondItem="RHZ-7V-Xgj" secondAttribute="leading" id="4G3-36-60S"/>
@@ -1034,8 +1046,10 @@
                                 <visibilityPriorities>
                                     <integer value="1000"/>
                                     <integer value="1000"/>
+                                    <integer value="1000"/>
                                 </visibilityPriorities>
                                 <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
                                     <real value="3.4028234663852886e+38"/>
                                     <real value="3.4028234663852886e+38"/>
                                 </customSpacing>
@@ -1058,7 +1072,7 @@
                 </viewController>
                 <customObject id="SAN-68-wmy" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="553" y="1922"/>
+            <point key="canvasLocation" x="675" y="1922"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
@@ -1533,7 +1547,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1137" y="3118"/>
+            <point key="canvasLocation" x="1389" y="3187"/>
         </scene>
     </scenes>
     <resources>
