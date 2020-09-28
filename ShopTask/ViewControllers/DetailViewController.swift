@@ -7,8 +7,8 @@
 
 import Cocoa
 // MARK: - Data
-let days = ["I", "II", "III"]
-let hours = ["9:00 - 10:00", "11:00 - 12:00", "8:00 - 16:00"]
+let days = ["I", "II", "III", "IV", "V", "VI", "VII"]
+let hours = ["9:00 - 10:00", "11:00 - 12:00", "8:00 - 16:00", "9:00 - 10:00", "9:00 - 10:00","9:00 - 10:00","9:00 - 10:00"]
 
 class DetailViewController: NSViewController {
     //    MARK: Outlets:
@@ -62,24 +62,31 @@ extension DetailViewController: NSTableViewDataSource {
 }
 
 extension DetailViewController: NSTableViewDelegate {
-        func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
-            return 20
-        }
-
+    func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
+        return 20
+    }
+    
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-
+        
         var cellContant = ""
         switch tableColumn?.title {
-        case "I":
+        case days[0]:
             cellContant = hours[0]
-        case "II":
+        case days[1]:
             cellContant = hours[1]
-        case "III":
+        case days[2]:
             cellContant = hours[2]
+        case days[3]:
+            cellContant = hours[3]
+        case days[4]:
+            cellContant = hours[4]
+        case days[5]:
+            cellContant = hours[5]
+        case days[6]:
+            cellContant = hours[6]
         default:
             cellContant = "default"
         }
-
         return NSTextField(labelWithString: cellContant)
     }
 }
