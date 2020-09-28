@@ -31,23 +31,13 @@ class DetailViewController: NSViewController {
         shopAddressLabel.stringValue = ""
         //        workingHoursStackView.isHidden = true
         
-        // Create collumn instances:
-        let column0 = NSTableColumn()
-        column0.title = days[0]
-        columns.append(column0)
-        
-        let column1 = NSTableColumn()
-        column1.title = days[1]
-        columns.append(column1)
-        
-        let column2 = NSTableColumn()
-        column2.title = days[2]
-        columns.append(column2)
-        
-        // Add collumn to table:
-        shopHoursTableView.addTableColumn(columns[0])
-        shopHoursTableView.addTableColumn(columns[1])
-        shopHoursTableView.addTableColumn(columns[2])
+        // Create collumn instances and add them to table:
+        for index in (0..<days.count){
+            let column = NSTableColumn()
+            column.title = days[index]
+            columns.append(column)
+            shopHoursTableView.addTableColumn(columns[index])
+        }
         
         // Sizes the table view based on a uniform column autoresizing style:
         shopHoursTableView.sizeToFit()
