@@ -685,7 +685,7 @@
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
                     <window key="window" title="Shop Details" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <connections>
@@ -1547,7 +1547,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1389" y="3187"/>
+            <point key="canvasLocation" x="1389" y="3019"/>
         </scene>
     </scenes>
     <resources>
