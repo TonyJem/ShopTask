@@ -26,7 +26,4 @@ struct Shop{
         let from: String
         let to: String
     }
-    
-    
-    
 }

@@ -29,7 +29,6 @@ class DetailViewController: NSViewController {
         super.viewDidLoad()
         shopNameLabel.stringValue = ""
         shopAddressLabel.stringValue = ""
-        //        workingHoursStackView.isHidden = true
         
         // Create collumn instances and add them to table:
         for index in (0..<days.count){
@@ -45,13 +44,20 @@ class DetailViewController: NSViewController {
     
     //    MARK: - Methods:
     func shopSelected(name: String, address: String) {
-        
         shopNameLabel.stringValue = name
         shopAddressLabel.stringValue = address
-        //        workingHoursStackView.isHidden = false
-        
-        workingHoursTableView.reloadData()
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
 
 // MARK: - Extentions
