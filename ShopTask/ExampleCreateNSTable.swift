@@ -9,9 +9,9 @@
 //https://gist.github.com/kitx/a80bec25661b985118a55ca33ecfdff2
 
 import Cocoa
-// MARK: - Data
-let days = ["I", "II", "III"]
-let hours = ["9:00 - 10:00", "11:00 - 12:00", "8:00 - 16:00"]
+//// MARK: - Data
+//let days = ["I", "II", "III"]
+//let hours = ["9:00 - 10:00", "11:00 - 12:00", "8:00 - 16:00"]
 
 class ExampleTableViewController: NSViewController {
     // MARK: - Properties
