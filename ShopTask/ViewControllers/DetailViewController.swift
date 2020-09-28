@@ -33,17 +33,14 @@ class DetailViewController: NSViewController {
         
         // Create collumn instances:
         let column0 = NSTableColumn()
-        column0.width = 100
         column0.title = days[0]
         columns.append(column0)
         
         let column1 = NSTableColumn()
-        column1.width = 200
         column1.title = days[1]
         columns.append(column1)
         
         let column2 = NSTableColumn()
-        column2.width = 300
         column2.title = days[2]
         columns.append(column2)
         
@@ -52,6 +49,8 @@ class DetailViewController: NSViewController {
         shopHoursTableView.addTableColumn(columns[1])
         shopHoursTableView.addTableColumn(columns[2])
         
+        // Sizes the table view based on a uniform column autoresizing style:
+        shopHoursTableView.sizeToFit()
     }
     
     //    MARK: - Methods:
