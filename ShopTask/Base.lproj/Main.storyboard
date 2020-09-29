@@ -1067,7 +1067,6 @@
                         <outlet property="shopHoursTableView" destination="ehg-7d-Dfe" id="FPG-5b-uPJ"/>
                         <outlet property="shopNameLabel" destination="20I-9g-7oV" id="iz5-fb-jdm"/>
                         <outlet property="workingHoursStackView" destination="BXH-na-j8R" id="Gdx-e5-AAJ"/>
-                        <outlet property="workingHoursTableView" destination="ehg-7d-Dfe" id="ee9-Hj-2Op"/>
                     </connections>
                 </viewController>
                 <customObject id="SAN-68-wmy" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

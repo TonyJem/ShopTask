@@ -18,38 +18,50 @@ class DetailViewController: NSViewController {
     @IBOutlet var shopNameLabel: NSTextField!
     @IBOutlet var shopAddressLabel: NSTextField!
     @IBOutlet var workingHoursStackView: NSStackView!
-    @IBOutlet var workingHoursTableView: NSTableView!
     
     // MARK: - Properties
     var selectedShop: Shop!
+    
+    var mondayWorkHours = Shop.WorkHours(from: "09:00", to: "21:00")
+    var tuesdayWorkHours = Shop.WorkHours(from: "09:00", to: "21:00")
+    var wednesdayWorkHours = Shop.WorkHours(from: "09:00", to: "21:00")
+    var thursdayWorkHours = Shop.WorkHours(from: "10:00", to: "21:00")
+    var fridayWorkHours = Shop.WorkHours(from: "", to: "")
+    var saturdayWorkHours = Shop.WorkHours(from: "09:00", to: "21:00")
+    var sundayWorkHours = Shop.WorkHours(from: "09:00", to: "21:00")
+    
+    
+    
     var columns: [NSTableColumn] = []
     
     var hoursAsStingInArray: [String] = []
     var registeredLeftItems: [Int] = []
     
-    var hoursAsStingInArrayUpdated: [String] = []
+    var hoursAsStingInArrayUpdated: [String] = hours
     
     var dayRanges: [String] = []
     
-    var dayRangesRomanian: [String] = []
+    var dayRangesRomanian: [String] = days
     
     //    MARK: - StartHere:
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //  Create schedule for shop:
+        let schedule = Shop.WorkSchedule(monday: mondayWorkHours,
+                                         tuesday: tuesdayWorkHours,
+                                         wednesday: wednesdayWorkHours,
+                                         thursday: thursdayWorkHours,
+                                         friday: nil,
+                                         saturday: saturdayWorkHours,
+                                         sunday: sundayWorkHours)
+        
         shopNameLabel.stringValue = ""
         shopAddressLabel.stringValue = ""
+        selectedShop = Shop(name: "NoName", address: "NoShopAddress", workSchedule: schedule)
         
-        // Create collumn instances and add them to table:
-        for index in (0..<days.count){
-            let column = NSTableColumn()
-            column.title = days[index]
-            columns.append(column)
-            shopHoursTableView.addTableColumn(columns[index])
-        }
-        
-        // Sizes the table view based on a uniform column autoresizing style:
-        shopHoursTableView.sizeToFit()
+        createNewTable()
     }
     
     //    MARK: - Methods:
@@ -58,10 +70,35 @@ class DetailViewController: NSViewController {
         shopAddressLabel.stringValue = shop.address
         selectedShop = shop
         
+        removeAllOldColumns()
+        
+        createNewTable()
+    }
+    
+    func createNewTable(){
         createWorkingHoursArray()
         createResults()
         createRangeStrings()
         formatStringFiguresToRomanianStyle()
+        
+        // Create collumn instances and add them to table:
+        for index in (0..<dayRangesRomanian.count){
+            let column = NSTableColumn()
+            column.title = dayRangesRomanian[index]
+            columns.append(column)
+            shopHoursTableView.addTableColumn(columns[index])
+        }
+        // Sizes the table view based on a uniform column autoresizing style:
+        shopHoursTableView.sizeToFit()
+    }
+    
+    
+    func removeAllOldColumns(){
+        for index in (0..<dayRangesRomanian.count){
+            shopHoursTableView.removeTableColumn(columns[index])
+        }
+        columns.removeAll()
+        shopHoursTableView.reloadData()
     }
     
     func getHoursInString(for hours: Shop.WorkHours?) -> String {
@@ -157,27 +194,27 @@ extension DetailViewController: NSTableViewDelegate {
     }
     
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
+        var cellContent = ""
         
-        var cellContant = ""
         switch tableColumn?.title {
-        case days[0]:
-            cellContant = hours[0]
-        case days[1]:
-            cellContant = hours[1]
-        case days[2]:
-            cellContant = hours[2]
-        case days[3]:
-            cellContant = hours[3]
-        case days[4]:
-            cellContant = hours[4]
-        case days[5]:
-            cellContant = hours[5]
-        case days[6]:
-            cellContant = hours[6]
+        case dayRangesRomanian[0]:
+            cellContent = hoursAsStingInArrayUpdated[0]
+        case dayRangesRomanian[1]:
+            cellContent = hoursAsStingInArrayUpdated[1]
+        case dayRangesRomanian[2]:
+            cellContent = hoursAsStingInArrayUpdated[2]
+        case dayRangesRomanian[3]:
+            cellContent = hoursAsStingInArrayUpdated[3]
+        case dayRangesRomanian[4]:
+            cellContent = hoursAsStingInArrayUpdated[4]
+        case dayRangesRomanian[5]:
+            cellContent = hoursAsStingInArrayUpdated[5]
+        case dayRangesRomanian[6]:
+            cellContent = hoursAsStingInArrayUpdated[6]
         default:
-            cellContant = "default"
+            cellContent = "default"
         }
-        return NSTextField(labelWithString: cellContant)
+        return NSTextField(labelWithString: cellContent)
     }
 }
 
