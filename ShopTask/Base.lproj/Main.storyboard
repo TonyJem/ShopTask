@@ -921,7 +921,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="Svx-It-TPp" id="EZL-mX-OAA"/>
+                        <outlet property="shopsListTableView" destination="Svx-It-TPp" id="Syl-RH-wAK"/>
                     </connections>
                 </viewController>
                 <customObject id="KTw-8z-AXd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

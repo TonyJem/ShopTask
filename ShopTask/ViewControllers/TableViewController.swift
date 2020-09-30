@@ -9,7 +9,7 @@ import Cocoa
 
 class TableViewController: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
     //    MARK: Outlets:
-    @IBOutlet var tableView: NSTableView!
+    @IBOutlet var shopsListTableView: NSTableView!
     
     //    MARK: - Properties:
     var testShop: Shop!
@@ -60,11 +60,11 @@ class TableViewController: NSViewController, NSTableViewDataSource, NSTableViewD
     
     // Provide data from selected row to DetailViewController:
     func tableViewSelectionDidChange(_ notification: Notification) {
-        guard tableView.selectedRow != -1 else { return }
+        guard shopsListTableView.selectedRow != -1 else { return }
         guard let splitVC = parent as? NSSplitViewController else { return }
         
         if let detailVC = splitVC.children[1] as? DetailViewController {
-            detailVC.shopSelected(shop: shops[tableView.selectedRow])
+            detailVC.showSelectedShopDetails(for: shops[shopsListTableView.selectedRow])
         }
     }
 }
