@@ -6,9 +6,6 @@
 //
 
 import Cocoa
-// MARK: - Data
-let days = ["I", "II", "III", "IV", "V", "VI", "VII"]
-let hours = ["9:00 - 10:00", "11:00 - 12:00", "8:00 - 16:00", "9:00 - 10:00", "9:00 - 10:00","9:00 - 10:00","9:00 - 10:00"]
 
 class DetailViewController: NSViewController {
     //    MARK: Outlets:
@@ -22,44 +19,22 @@ class DetailViewController: NSViewController {
     // MARK: - Properties
     var selectedShop: Shop!
     
-    var mondayWorkHours0 = Shop.WorkHours(from: "09:00", to: "21:00")
-    var tuesdayWorkHours0 = Shop.WorkHours(from: "09:00", to: "21:00")
-    var wednesdayWorkHours0 = Shop.WorkHours(from: "09:00", to: "21:00")
-    var thursdayWorkHours0 = Shop.WorkHours(from: "10:00", to: "21:00")
-    var fridayWorkHours0 = Shop.WorkHours(from: "", to: "")
-    var saturdayWorkHours0 = Shop.WorkHours(from: "09:00", to: "21:00")
-    var sundayWorkHours0 = Shop.WorkHours(from: "09:00", to: "21:00")
-    
     var columns: [NSTableColumn] = []
     
     var hoursAsStingInArray: [String] = []
     var registeredLeftItems: [Int] = []
     
-    var hoursAsStingInArrayUpdated: [String] = hours
+    var hoursAsStingInArrayUpdated: [String] = []
     
     var dayRanges: [String] = []
-    
-    var dayRangesRomanian: [String] = days
+    var dayRangesRomanian: [String] = []
     
     //    MARK: - StartHere:
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //  Create schedule for shop:
-        let schedule0 = Shop.WorkSchedule(monday: mondayWorkHours0,
-                                         tuesday: tuesdayWorkHours0,
-                                         wednesday: wednesdayWorkHours0,
-                                         thursday: thursdayWorkHours0,
-                                         friday: nil,
-                                         saturday: saturdayWorkHours0,
-                                         sunday: sundayWorkHours0)
-        
         shopNameLabel.stringValue = ""
         shopAddressLabel.stringValue = ""
-        selectedShop = Shop(name: "NoName", address: "NoShopAddress", workSchedule: schedule0)
-        
-        createNewTable()
     }
     
     //    MARK: - Methods:
@@ -68,7 +43,7 @@ class DetailViewController: NSViewController {
         shopAddressLabel.stringValue = shop.address
         selectedShop = shop
         
-        removeAllOldColumns()
+        removeAllOldColumnsAndData()
         
         createNewTable()
     }
@@ -91,11 +66,16 @@ class DetailViewController: NSViewController {
     }
     
     
-    func removeAllOldColumns(){
-        for index in (0..<dayRangesRomanian.count){
-            shopHoursTableView.removeTableColumn(columns[index])
+    func removeAllOldColumnsAndData(){
+        if dayRangesRomanian.count != 0 {
+            for index in (0..<dayRangesRomanian.count){
+                shopHoursTableView.removeTableColumn(columns[index])
+            }
         }
+        
         columns.removeAll()
+        hoursAsStingInArrayUpdated = []
+        dayRangesRomanian = []
         shopHoursTableView.reloadData()
     }
     
@@ -215,4 +195,3 @@ extension DetailViewController: NSTableViewDelegate {
         return NSTextField(labelWithString: cellContent)
     }
 }
-

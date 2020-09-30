@@ -58,13 +58,13 @@ class TableViewController: NSViewController, NSTableViewDataSource, NSTableViewD
         return vw
     }
     
-    // Provides data from selected row to DetailViewController:
+    // Provide data from selected row to DetailViewController:
     func tableViewSelectionDidChange(_ notification: Notification) {
         guard tableView.selectedRow != -1 else { return }
         guard let splitVC = parent as? NSSplitViewController else { return }
         
-        if let detail = splitVC.children[1] as? DetailViewController {
-            detail.shopSelected(shop: shops[tableView.selectedRow])
+        if let detailVC = splitVC.children[1] as? DetailViewController {
+            detailVC.shopSelected(shop: shops[tableView.selectedRow])
         }
     }
 }

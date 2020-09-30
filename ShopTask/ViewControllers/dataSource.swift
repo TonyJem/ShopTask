@@ -64,4 +64,3 @@ let schedule3 = Shop.WorkSchedule(monday: mondayWorkHours3,
                                  friday: nil,
                                  saturday: saturdayWorkHours3,
                                  sunday: sundayWorkHours3)
-
