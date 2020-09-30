@@ -22,15 +22,13 @@ class DetailViewController: NSViewController {
     // MARK: - Properties
     var selectedShop: Shop!
     
-    var mondayWorkHours = Shop.WorkHours(from: "09:00", to: "21:00")
-    var tuesdayWorkHours = Shop.WorkHours(from: "09:00", to: "21:00")
-    var wednesdayWorkHours = Shop.WorkHours(from: "09:00", to: "21:00")
-    var thursdayWorkHours = Shop.WorkHours(from: "10:00", to: "21:00")
-    var fridayWorkHours = Shop.WorkHours(from: "", to: "")
-    var saturdayWorkHours = Shop.WorkHours(from: "09:00", to: "21:00")
-    var sundayWorkHours = Shop.WorkHours(from: "09:00", to: "21:00")
-    
-    
+    var mondayWorkHours0 = Shop.WorkHours(from: "09:00", to: "21:00")
+    var tuesdayWorkHours0 = Shop.WorkHours(from: "09:00", to: "21:00")
+    var wednesdayWorkHours0 = Shop.WorkHours(from: "09:00", to: "21:00")
+    var thursdayWorkHours0 = Shop.WorkHours(from: "10:00", to: "21:00")
+    var fridayWorkHours0 = Shop.WorkHours(from: "", to: "")
+    var saturdayWorkHours0 = Shop.WorkHours(from: "09:00", to: "21:00")
+    var sundayWorkHours0 = Shop.WorkHours(from: "09:00", to: "21:00")
     
     var columns: [NSTableColumn] = []
     
@@ -49,17 +47,17 @@ class DetailViewController: NSViewController {
         super.viewDidLoad()
         
         //  Create schedule for shop:
-        let schedule = Shop.WorkSchedule(monday: mondayWorkHours,
-                                         tuesday: tuesdayWorkHours,
-                                         wednesday: wednesdayWorkHours,
-                                         thursday: thursdayWorkHours,
+        let schedule0 = Shop.WorkSchedule(monday: mondayWorkHours0,
+                                         tuesday: tuesdayWorkHours0,
+                                         wednesday: wednesdayWorkHours0,
+                                         thursday: thursdayWorkHours0,
                                          friday: nil,
-                                         saturday: saturdayWorkHours,
-                                         sunday: sundayWorkHours)
+                                         saturday: saturdayWorkHours0,
+                                         sunday: sundayWorkHours0)
         
         shopNameLabel.stringValue = ""
         shopAddressLabel.stringValue = ""
-        selectedShop = Shop(name: "NoName", address: "NoShopAddress", workSchedule: schedule)
+        selectedShop = Shop(name: "NoName", address: "NoShopAddress", workSchedule: schedule0)
         
         createNewTable()
     }

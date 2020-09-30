@@ -24,13 +24,29 @@ class TableViewController: NSViewController, NSTableViewDataSource, NSTableViewD
     var testShopName = "TestName0"
     var testShopAddress = "TestAddress"
     
-    var mondayWorkHours = Shop.WorkHours(from: "09:00", to: "21:00")
-    var tuesdayWorkHours = Shop.WorkHours(from: "09:00", to: "21:00")
-    var wednesdayWorkHours = Shop.WorkHours(from: "09:00", to: "21:00")
-    var thursdayWorkHours = Shop.WorkHours(from: "10:00", to: "21:00")
-    var fridayWorkHours = Shop.WorkHours(from: "", to: "")
-    var saturdayWorkHours = Shop.WorkHours(from: "09:00", to: "21:00")
-    var sundayWorkHours = Shop.WorkHours(from: "09:00", to: "21:00")
+    var mondayWorkHours1 = Shop.WorkHours(from: "09:00", to: "21:00")
+    var tuesdayWorkHours1 = Shop.WorkHours(from: "09:00", to: "21:00")
+    var wednesdayWorkHours1 = Shop.WorkHours(from: "09:00", to: "21:00")
+    var thursdayWorkHours1 = Shop.WorkHours(from: "09:00", to: "21:00")
+    var fridayWorkHours1 = Shop.WorkHours(from: "09:00", to: "21:00")
+    var saturdayWorkHours1 = Shop.WorkHours(from: "09:00", to: "21:00")
+    var sundayWorkHours1 = Shop.WorkHours(from: "09:00", to: "21:00")
+    
+    var mondayWorkHours2 = Shop.WorkHours(from: "10:00", to: "20:00")
+    var tuesdayWorkHours2 = Shop.WorkHours(from: "10:00", to: "20:00")
+    var wednesdayWorkHours2 = Shop.WorkHours(from: "10:00", to: "20:00")
+    var thursdayWorkHours2 = Shop.WorkHours(from: "10:00", to: "20:00")
+    var fridayWorkHours2 = Shop.WorkHours(from: "10:00", to: "20:00")
+    var saturdayWorkHours2 = Shop.WorkHours(from: "09:00", to: "21:00")
+    var sundayWorkHours2 = Shop.WorkHours(from: "09:00", to: "21:00")
+    
+    var mondayWorkHours3 = Shop.WorkHours(from: "09:00", to: "21:00")
+    var tuesdayWorkHours3 = Shop.WorkHours(from: "09:00", to: "21:00")
+    var wednesdayWorkHours3 = Shop.WorkHours(from: "09:00", to: "21:00")
+    var thursdayWorkHours3 = Shop.WorkHours(from: "", to: "")
+    var fridayWorkHours3 = Shop.WorkHours(from: "", to: "")
+    var saturdayWorkHours3 = Shop.WorkHours(from: "09:00", to: "21:00")
+    var sundayWorkHours3 = Shop.WorkHours(from: "09:00", to: "21:00")
     
     
     
@@ -40,18 +56,44 @@ class TableViewController: NSViewController, NSTableViewDataSource, NSTableViewD
         
         
         //  Create schedule for shop:
-        let schedule = Shop.WorkSchedule(monday: mondayWorkHours,
-                                         tuesday: tuesdayWorkHours,
-                                         wednesday: wednesdayWorkHours,
-                                         thursday: thursdayWorkHours,
+        let schedule = Shop.WorkSchedule(monday: nil,
+                                         tuesday: nil,
+                                         wednesday: nil,
+                                         thursday: nil,
                                          friday: nil,
-                                         saturday: saturdayWorkHours,
-                                         sunday: sundayWorkHours)
+                                         saturday: nil,
+                                         sunday: nil)
+        
+        let schedule1 = Shop.WorkSchedule(monday: mondayWorkHours1,
+                                         tuesday: tuesdayWorkHours1,
+                                         wednesday: wednesdayWorkHours1,
+                                         thursday: thursdayWorkHours1,
+                                         friday: fridayWorkHours1,
+                                         saturday: saturdayWorkHours1,
+                                         sunday: sundayWorkHours1)
+        
+        
+        let schedule2 = Shop.WorkSchedule(monday: mondayWorkHours2,
+                                         tuesday: tuesdayWorkHours2,
+                                         wednesday: wednesdayWorkHours2,
+                                         thursday: thursdayWorkHours2,
+                                         friday: nil,
+                                         saturday: nil,
+                                         sunday: nil)
+        
+        let schedule3 = Shop.WorkSchedule(monday: mondayWorkHours3,
+                                         tuesday: tuesdayWorkHours3,
+                                         wednesday: wednesdayWorkHours3,
+                                         thursday: nil,
+                                         friday: nil,
+                                         saturday: saturdayWorkHours3,
+                                         sunday: sundayWorkHours3)
+        
         //  Initialize testShops:
         testShop = Shop(name: testShopName, address: testShopAddress, workSchedule: schedule)
-        testShop1 = Shop(name: "TestName1", address: "TestShopAddress1", workSchedule: schedule)
-        testShop2 = Shop(name: "TestName2", address: "TestShopAddress2", workSchedule: schedule)
-        testShop3 = Shop(name: "TestName3", address: "TestShopAddress3", workSchedule: schedule)
+        testShop1 = Shop(name: "TestName1", address: "TestShopAddress1", workSchedule: schedule1)
+        testShop2 = Shop(name: "TestName2", address: "TestShopAddress2", workSchedule: schedule2)
+        testShop3 = Shop(name: "TestName3", address: "TestShopAddress3", workSchedule: schedule3)
         
         //  Initialize array with testShops:
         shops = [testShop, testShop1, testShop2, testShop3]
