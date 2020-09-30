@@ -9,24 +9,30 @@ import Cocoa
 
 class DetailViewController: NSViewController {
     //    MARK: Outlets:
-    //    @IBOutlet var ImageView: NSImageView!
-    
     @IBOutlet var shopHoursTableView: NSTableView!
     @IBOutlet var shopNameLabel: NSTextField!
     @IBOutlet var shopAddressLabel: NSTextField!
     @IBOutlet var workingHoursStackView: NSStackView!
     
-    // MARK: - Properties
+    // MARK: - Properties:
     var selectedShop: Shop!
     
+    //  Array containing all tables collumns as NSTableColumns
     var columns: [NSTableColumn] = []
     
+    //  Array with All workingHours as Strings
     var hoursAsStingInArray: [String] = []
+    
+    //  Array with unique workingHours day's numbers as Ints
     var registeredLeftItems: [Int] = []
     
-    var hoursAsStingInArrayUpdated: [String] = []
+    //  Array with only unique workingHours as Ints
+    var hoursAsStringInArrayUpdated: [String] = []
     
+    //  Array with collumn titles as Arab numerals
     var dayRanges: [String] = []
+    
+    //  Array with collumn titles as Roman numerals
     var dayRangesRomanian: [String] = []
     
     //    MARK: - StartHere:
@@ -38,7 +44,7 @@ class DetailViewController: NSViewController {
     }
     
     //    MARK: - Methods:
-    func shopSelected(shop: Shop) {
+    func showSelectedShopDetails(for shop: Shop) {
         shopNameLabel.stringValue = shop.name
         shopAddressLabel.stringValue = shop.address
         selectedShop = shop
@@ -65,7 +71,7 @@ class DetailViewController: NSViewController {
         shopHoursTableView.sizeToFit()
     }
     
-    
+    // Reset arrays, containing table collumns and table data, to initial state:
     func removeAllOldColumnsAndData(){
         if dayRangesRomanian.count != 0 {
             for index in (0..<dayRangesRomanian.count){
@@ -74,11 +80,12 @@ class DetailViewController: NSViewController {
         }
         
         columns.removeAll()
-        hoursAsStingInArrayUpdated = []
+        hoursAsStringInArrayUpdated = []
         dayRangesRomanian = []
         shopHoursTableView.reloadData()
     }
     
+    // Convert workingHours to String type:
     func getHoursInString(for hours: Shop.WorkHours?) -> String {
         var hoursInString = "Closed"
         if let dayHours = hours{
@@ -87,6 +94,7 @@ class DetailViewController: NSViewController {
         return hoursInString
     }
     
+    // Create Array containing workingHours as Strings:
     func createWorkingHoursArray(){
         hoursAsStingInArray.removeAll()
         hoursAsStingInArray.append(getHoursInString(for: selectedShop.workSchedule.monday))
@@ -98,19 +106,21 @@ class DetailViewController: NSViewController {
         hoursAsStingInArray.append(getHoursInString(for: selectedShop.workSchedule.sunday))
     }
     
+    // Create two Arrays, one containing only unique workingHours as Strings and other that holds days' (with unique workingHours) numbers as Int:
     func createResults(){
         registeredLeftItems.removeAll()
         registeredLeftItems.append(1)
-        hoursAsStingInArrayUpdated.append(hoursAsStingInArray[0])
+        hoursAsStringInArrayUpdated.append(hoursAsStingInArray[0])
         for item in 1...6{
             if hoursAsStingInArray[item] == hoursAsStingInArray[item - 1]{
             } else {
-                hoursAsStingInArrayUpdated.append(hoursAsStingInArray[item])
+                hoursAsStringInArrayUpdated.append(hoursAsStingInArray[item])
                 registeredLeftItems.append(item + 1)
             }
         }
     }
     
+    // Create Array containing collumns' titles as Ints:
     func createRangeStrings(){
         dayRanges.removeAll()
         if registeredLeftItems.count > 1{
@@ -125,6 +135,7 @@ class DetailViewController: NSViewController {
         dayRanges.append("\(registeredLeftItems[registeredLeftItems.count - 1])-7")
     }
     
+    // Create Array containing formatted to Roman numerals collumns' titles as Ints:
     func formatStringFiguresToRomanianStyle(){
         dayRangesRomanian.removeAll()
         for range in dayRanges{
@@ -159,7 +170,7 @@ class DetailViewController: NSViewController {
     }
 }
 
-// MARK: - Extentions
+// MARK: - Extentions for managing TableView:
 extension DetailViewController: NSTableViewDataSource {
     func numberOfRows(in tableView: NSTableView) -> Int {
         return 1
@@ -176,19 +187,19 @@ extension DetailViewController: NSTableViewDelegate {
         
         switch tableColumn?.title {
         case dayRangesRomanian[0]:
-            cellContent = hoursAsStingInArrayUpdated[0]
+            cellContent = hoursAsStringInArrayUpdated[0]
         case dayRangesRomanian[1]:
-            cellContent = hoursAsStingInArrayUpdated[1]
+            cellContent = hoursAsStringInArrayUpdated[1]
         case dayRangesRomanian[2]:
-            cellContent = hoursAsStingInArrayUpdated[2]
+            cellContent = hoursAsStringInArrayUpdated[2]
         case dayRangesRomanian[3]:
-            cellContent = hoursAsStingInArrayUpdated[3]
+            cellContent = hoursAsStringInArrayUpdated[3]
         case dayRangesRomanian[4]:
-            cellContent = hoursAsStingInArrayUpdated[4]
+            cellContent = hoursAsStringInArrayUpdated[4]
         case dayRangesRomanian[5]:
-            cellContent = hoursAsStingInArrayUpdated[5]
+            cellContent = hoursAsStringInArrayUpdated[5]
         case dayRangesRomanian[6]:
-            cellContent = hoursAsStingInArrayUpdated[6]
+            cellContent = hoursAsStringInArrayUpdated[6]
         default:
             cellContent = "default"
         }
