@@ -64,7 +64,7 @@ class TableViewController: NSViewController, NSTableViewDataSource, NSTableViewD
         guard let splitVC = parent as? NSSplitViewController else { return }
         
         if let detailVC = splitVC.children[1] as? DetailViewController {
-            detailVC.showSelectedShopDetails(for: shops[shopsListTableView.selectedRow])
+            detailVC.showDetailsForSelectedShop(shops[shopsListTableView.selectedRow])
         }
     }
 }
