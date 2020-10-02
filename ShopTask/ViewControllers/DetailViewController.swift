@@ -44,7 +44,7 @@ class DetailViewController: NSViewController {
     }
     
     //    MARK: - Methods:
-    func showDetailsForSelectedShop(_ shop: Shop) {
+    func showDetails(for shop: Shop) {
         shopNameLabel.stringValue = shop.name
         shopAddressLabel.stringValue = shop.address
         selectedShop = shop
