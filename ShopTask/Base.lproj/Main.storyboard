@@ -720,7 +720,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="roundTextured" alternateTitle="ALTERNATE TITLE" bezelStyle="texturedRounded" image="NSAddTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Tgb-zQ-9Uq">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="system"/>
+                                            <font key="font" metaFont="label" size="13"/>
                                         </buttonCell>
                                     </button>
                                 </toolbarItem>
@@ -731,7 +731,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSTouchBarDeleteTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9MY-Dk-OkP">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="system"/>
+                                            <font key="font" metaFont="label" size="13"/>
                                         </buttonCell>
                                     </button>
                                 </toolbarItem>
@@ -742,7 +742,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSMultipleDocuments" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="E51-0H-75l">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="system"/>
+                                            <font key="font" metaFont="label" size="13"/>
                                         </buttonCell>
                                     </button>
                                 </toolbarItem>
@@ -753,7 +753,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSSmartBadgeTemplate" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="NjB-rT-CvR">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="system"/>
+                                            <font key="font" metaFont="label" size="13"/>
                                         </buttonCell>
                                     </button>
                                 </toolbarItem>
@@ -833,7 +833,7 @@
                                                         <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                     </tableHeaderCell>
                                                     <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" title="Text Cell" id="HHN-RM-qok">
-                                                        <font key="font" metaFont="system"/>
+                                                        <font key="font" metaFont="label" size="13"/>
                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
@@ -847,7 +847,7 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="140" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="q1S-8V-i65">
-                                                                        <font key="font" metaFont="system"/>
+                                                                        <font key="font" metaFont="label" size="13"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                                     </textFieldCell>
@@ -865,7 +865,7 @@
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </tableHeaderCell>
                                                     <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="tlx-1r-oe5">
-                                                        <font key="font" metaFont="system"/>
+                                                        <font key="font" metaFont="label" size="13"/>
                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
@@ -879,7 +879,7 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="278" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="Sjf-rl-tNa">
-                                                                        <font key="font" metaFont="system"/>
+                                                                        <font key="font" metaFont="label" size="13"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                                     </textFieldCell>
@@ -1029,10 +1029,10 @@
                                         </customSpacing>
                                     </stackView>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Tzi-fv-A5K">
-                                        <rect key="frame" x="231" y="-7" width="192" height="32"/>
-                                        <buttonCell key="cell" type="push" title="Edit Shop Working Hours" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ebS-23-IhL">
+                                        <rect key="frame" x="255" y="-7" width="144" height="32"/>
+                                        <buttonCell key="cell" type="push" title="Edit Shop Details" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ebS-23-IhL">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="system"/>
+                                            <font key="font" metaFont="label" size="13"/>
                                         </buttonCell>
                                         <connections>
                                             <segue destination="B8D-0N-5wS" kind="show" id="JYz-Ma-F5r"/>
@@ -1063,6 +1063,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="editShopDetailsBtn" destination="Tzi-fv-A5K" id="Eth-GY-IdG"/>
                         <outlet property="shopAddressLabel" destination="3eI-n8-p47" id="jgd-0o-zBe"/>
                         <outlet property="shopHoursTableView" destination="ehg-7d-Dfe" id="FPG-5b-uPJ"/>
                         <outlet property="shopNameLabel" destination="20I-9g-7oV" id="iz5-fb-jdm"/>
@@ -1139,7 +1140,7 @@
                                                 <rect key="frame" x="-6" y="-6" width="144" height="32"/>
                                                 <buttonCell key="cell" type="push" title="Monday" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" inset="2" id="GXz-dC-M0S">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
-                                                    <font key="font" metaFont="system"/>
+                                                    <font key="font" metaFont="label" size="13"/>
                                                 </buttonCell>
                                             </button>
                                             <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="N8y-ad-Rcy">
@@ -1148,7 +1149,7 @@
                                                     <constraint firstAttribute="width" constant="65" id="LYj-9W-h8u"/>
                                                 </constraints>
                                                 <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="BKj-eT-VoF">
-                                                    <font key="font" metaFont="system"/>
+                                                    <font key="font" metaFont="label" size="13"/>
                                                     <date key="date" timeIntervalSinceReferenceDate="-627472800">
                                                         <!--1981-02-12 14:00:00 +0000-->
                                                     </date>
@@ -1163,7 +1164,7 @@
                                                     <constraint firstAttribute="width" constant="65" id="5Jz-ag-RqV"/>
                                                 </constraints>
                                                 <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="4XP-eC-30W">
-                                                    <font key="font" metaFont="system"/>
+                                                    <font key="font" metaFont="label" size="13"/>
                                                     <date key="date" timeIntervalSinceReferenceDate="-595929600">
                                                         <!--1982-02-12 16:00:00 +0000-->
                                                     </date>
@@ -1191,7 +1192,7 @@
                                                 <rect key="frame" x="-6" y="-6" width="144" height="32"/>
                                                 <buttonCell key="cell" type="push" title="Tuesday" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" inset="2" id="3T4-4G-xb9">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
-                                                    <font key="font" metaFont="system"/>
+                                                    <font key="font" metaFont="label" size="13"/>
                                                 </buttonCell>
                                             </button>
                                             <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="owB-Ce-cIZ">
@@ -1200,7 +1201,7 @@
                                                     <constraint firstAttribute="width" constant="65" id="Ozc-RZ-wpo"/>
                                                 </constraints>
                                                 <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="f40-eS-ug4">
-                                                    <font key="font" metaFont="system"/>
+                                                    <font key="font" metaFont="label" size="13"/>
                                                     <date key="date" timeIntervalSinceReferenceDate="-627472800">
                                                         <!--1981-02-12 14:00:00 +0000-->
                                                     </date>
@@ -1215,7 +1216,7 @@
                                                     <constraint firstAttribute="width" constant="65" id="taO-p3-Wm4"/>
                                                 </constraints>
                                                 <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="4tG-fi-fPX">
-                                                    <font key="font" metaFont="system"/>
+                                                    <font key="font" metaFont="label" size="13"/>
                                                     <date key="date" timeIntervalSinceReferenceDate="-595929600">
                                                         <!--1982-02-12 16:00:00 +0000-->
                                                     </date>
@@ -1243,7 +1244,7 @@
                                                 <rect key="frame" x="-6" y="-6" width="144" height="32"/>
                                                 <buttonCell key="cell" type="push" title="Wednesday" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" inset="2" id="5Vc-cI-757">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
-                                                    <font key="font" metaFont="system"/>
+                                                    <font key="font" metaFont="label" size="13"/>
                                                 </buttonCell>
                                             </button>
                                             <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8Iu-0b-18B">
@@ -1252,7 +1253,7 @@
                                                     <constraint firstAttribute="width" constant="65" id="dcE-Co-fEf"/>
                                                 </constraints>
                                                 <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="ziO-ZM-wiX">
-                                                    <font key="font" metaFont="system"/>
+                                                    <font key="font" metaFont="label" size="13"/>
                                                     <date key="date" timeIntervalSinceReferenceDate="-627472800">
                                                         <!--1981-02-12 14:00:00 +0000-->
                                                     </date>
@@ -1267,7 +1268,7 @@
                                                     <constraint firstAttribute="width" constant="65" id="fLm-RR-c9e"/>
                                                 </constraints>
                                                 <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="ccu-m6-hUg">
-                                                    <font key="font" metaFont="system"/>
+                                                    <font key="font" metaFont="label" size="13"/>
                                                     <date key="date" timeIntervalSinceReferenceDate="-595929600">
                                                         <!--1982-02-12 16:00:00 +0000-->
                                                     </date>
@@ -1295,7 +1296,7 @@
                                                 <rect key="frame" x="-6" y="-6" width="144" height="32"/>
                                                 <buttonCell key="cell" type="push" title="Thursday" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" inset="2" id="K6F-TD-K4W">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
-                                                    <font key="font" metaFont="system"/>
+                                                    <font key="font" metaFont="label" size="13"/>
                                                 </buttonCell>
                                             </button>
                                             <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DE2-lo-15e">
@@ -1304,7 +1305,7 @@
                                                     <constraint firstAttribute="width" constant="65" id="cLd-ku-dXD"/>
                                                 </constraints>
                                                 <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="7Xz-xa-vGR">
-                                                    <font key="font" metaFont="system"/>
+                                                    <font key="font" metaFont="label" size="13"/>
                                                     <date key="date" timeIntervalSinceReferenceDate="-627472800">
                                                         <!--1981-02-12 14:00:00 +0000-->
                                                     </date>
@@ -1319,7 +1320,7 @@
                                                     <constraint firstAttribute="width" constant="65" id="wlJ-bf-jIY"/>
                                                 </constraints>
                                                 <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="fdj-4Q-C0i">
-                                                    <font key="font" metaFont="system"/>
+                                                    <font key="font" metaFont="label" size="13"/>
                                                     <date key="date" timeIntervalSinceReferenceDate="-595929600">
                                                         <!--1982-02-12 16:00:00 +0000-->
                                                     </date>
@@ -1347,7 +1348,7 @@
                                                 <rect key="frame" x="-6" y="-6" width="144" height="32"/>
                                                 <buttonCell key="cell" type="push" title="Friday" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" inset="2" id="6BW-dq-Ifv">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
-                                                    <font key="font" metaFont="system"/>
+                                                    <font key="font" metaFont="label" size="13"/>
                                                 </buttonCell>
                                             </button>
                                             <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GKs-II-Osh">
@@ -1356,7 +1357,7 @@
                                                     <constraint firstAttribute="width" constant="65" id="brv-VX-fyx"/>
                                                 </constraints>
                                                 <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="fGD-nr-H9m">
-                                                    <font key="font" metaFont="system"/>
+                                                    <font key="font" metaFont="label" size="13"/>
                                                     <date key="date" timeIntervalSinceReferenceDate="-627472800">
                                                         <!--1981-02-12 14:00:00 +0000-->
                                                     </date>
@@ -1371,7 +1372,7 @@
                                                     <constraint firstAttribute="width" constant="65" id="t4q-B8-ELj"/>
                                                 </constraints>
                                                 <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="mtR-uH-rbU">
-                                                    <font key="font" metaFont="system"/>
+                                                    <font key="font" metaFont="label" size="13"/>
                                                     <date key="date" timeIntervalSinceReferenceDate="-595929600">
                                                         <!--1982-02-12 16:00:00 +0000-->
                                                     </date>
@@ -1399,7 +1400,7 @@
                                                 <rect key="frame" x="-6" y="-6" width="144" height="32"/>
                                                 <buttonCell key="cell" type="push" title="Saturday" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" inset="2" id="hRX-Bl-f2U">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
-                                                    <font key="font" metaFont="system"/>
+                                                    <font key="font" metaFont="label" size="13"/>
                                                 </buttonCell>
                                             </button>
                                             <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VXA-ST-jLF">
@@ -1408,7 +1409,7 @@
                                                     <constraint firstAttribute="width" constant="65" id="u8z-z2-8MW"/>
                                                 </constraints>
                                                 <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="lwF-Bb-XYg">
-                                                    <font key="font" metaFont="system"/>
+                                                    <font key="font" metaFont="label" size="13"/>
                                                     <date key="date" timeIntervalSinceReferenceDate="-627472800">
                                                         <!--1981-02-12 14:00:00 +0000-->
                                                     </date>
@@ -1423,7 +1424,7 @@
                                                     <constraint firstAttribute="width" constant="65" id="WAM-44-pxv"/>
                                                 </constraints>
                                                 <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="aZ9-T1-Ygo">
-                                                    <font key="font" metaFont="system"/>
+                                                    <font key="font" metaFont="label" size="13"/>
                                                     <date key="date" timeIntervalSinceReferenceDate="-595929600">
                                                         <!--1982-02-12 16:00:00 +0000-->
                                                     </date>
@@ -1451,7 +1452,7 @@
                                                 <rect key="frame" x="-6" y="-6" width="144" height="32"/>
                                                 <buttonCell key="cell" type="push" title="Sunday" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" inset="2" id="3aH-1U-fH5">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
-                                                    <font key="font" metaFont="system"/>
+                                                    <font key="font" metaFont="label" size="13"/>
                                                 </buttonCell>
                                             </button>
                                             <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vYA-Dz-gty">
@@ -1460,7 +1461,7 @@
                                                     <constraint firstAttribute="width" constant="65" id="OXj-cm-sJe"/>
                                                 </constraints>
                                                 <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="gSa-bV-v1a">
-                                                    <font key="font" metaFont="system"/>
+                                                    <font key="font" metaFont="label" size="13"/>
                                                     <date key="date" timeIntervalSinceReferenceDate="-627472800">
                                                         <!--1981-02-12 14:00:00 +0000-->
                                                     </date>
@@ -1475,7 +1476,7 @@
                                                     <constraint firstAttribute="width" constant="65" id="60J-1K-uet"/>
                                                 </constraints>
                                                 <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="mHN-zU-3eM">
-                                                    <font key="font" metaFont="system"/>
+                                                    <font key="font" metaFont="label" size="13"/>
                                                     <date key="date" timeIntervalSinceReferenceDate="-595929600">
                                                         <!--1982-02-12 16:00:00 +0000-->
                                                     </date>

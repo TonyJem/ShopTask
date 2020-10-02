@@ -13,6 +13,7 @@ class DetailViewController: NSViewController {
     @IBOutlet var shopNameLabel: NSTextField!
     @IBOutlet var shopAddressLabel: NSTextField!
     @IBOutlet var workingHoursStackView: NSStackView!
+    @IBOutlet var editShopDetailsBtn: NSButton!
     
     // MARK: - Properties:
     var selectedShop: Shop!
@@ -41,6 +42,8 @@ class DetailViewController: NSViewController {
         
         shopNameLabel.stringValue = ""
         shopAddressLabel.stringValue = ""
+        
+        editShopDetailsBtn.isEnabled = false
     }
     
     //    MARK: - Methods:
@@ -49,8 +52,9 @@ class DetailViewController: NSViewController {
         shopAddressLabel.stringValue = shop.address
         selectedShop = shop
         
-        resetDataAndTableColumns()
+        editShopDetailsBtn.isEnabled = true
         
+        resetDataAndTableColumns()
         fillTableWithSelectedShopDetails()
     }
     
