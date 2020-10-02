@@ -45,9 +45,9 @@
 		3A8F10F1251FCC66002AA5C1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				3A8F10ED251FCC00002AA5C1 /* TableViewController.swift */,
-				3A8F10EF251FCC2B002AA5C1 /* DetailViewController.swift */,
 				C288D6A7251F2E1E008CBE82 /* EditDetailsViewController.swift */,
+				3A8F10EF251FCC2B002AA5C1 /* DetailViewController.swift */,
+				3A8F10ED251FCC00002AA5C1 /* TableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
