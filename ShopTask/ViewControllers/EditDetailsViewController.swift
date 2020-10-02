@@ -55,9 +55,6 @@ class EditDetailsViewController: NSViewController {
     
     override func viewWillAppear() {
         
-        
-        
-        mondayBtn.isEnabled = false
     }
     
     override func viewDidLoad() {
