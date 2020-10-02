@@ -1231,6 +1231,9 @@
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
+                                                                <connections>
+                                                                    <action selector="mondayBtnClicked:" target="XfG-lQ-9wD" id="4Lu-D1-FF7"/>
+                                                                </connections>
                                                             </button>
                                                             <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="N8y-ad-Rcy">
                                                                 <rect key="frame" x="151" y="0.0" width="68" height="28"/>
@@ -1283,6 +1286,9 @@
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
+                                                                <connections>
+                                                                    <action selector="tuesdayBtnClicked:" target="XfG-lQ-9wD" id="LaC-9B-iPA"/>
+                                                                </connections>
                                                             </button>
                                                             <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="owB-Ce-cIZ">
                                                                 <rect key="frame" x="151" y="0.0" width="68" height="28"/>
@@ -1335,6 +1341,9 @@
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
+                                                                <connections>
+                                                                    <action selector="wednesdayBtnClicked:" target="XfG-lQ-9wD" id="89K-BY-WfI"/>
+                                                                </connections>
                                                             </button>
                                                             <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8Iu-0b-18B">
                                                                 <rect key="frame" x="151" y="0.0" width="68" height="28"/>
@@ -1387,6 +1396,9 @@
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
+                                                                <connections>
+                                                                    <action selector="thursdayBtnClicked:" target="XfG-lQ-9wD" id="xnc-xv-3wY"/>
+                                                                </connections>
                                                             </button>
                                                             <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DE2-lo-15e">
                                                                 <rect key="frame" x="151" y="0.0" width="68" height="28"/>
@@ -1439,6 +1451,9 @@
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
+                                                                <connections>
+                                                                    <action selector="fridayBtnClicked:" target="XfG-lQ-9wD" id="hAy-l4-11G"/>
+                                                                </connections>
                                                             </button>
                                                             <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GKs-II-Osh">
                                                                 <rect key="frame" x="151" y="0.0" width="68" height="28"/>
@@ -1491,6 +1506,9 @@
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
+                                                                <connections>
+                                                                    <action selector="saturdayBtnClicked:" target="XfG-lQ-9wD" id="PhZ-6E-mRi"/>
+                                                                </connections>
                                                             </button>
                                                             <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VXA-ST-jLF">
                                                                 <rect key="frame" x="151" y="0.0" width="68" height="28"/>
@@ -1543,6 +1561,9 @@
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
+                                                                <connections>
+                                                                    <action selector="sundayBtnClicked:" target="XfG-lQ-9wD" id="XMb-7m-n1c"/>
+                                                                </connections>
                                                             </button>
                                                             <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vYA-Dz-gty">
                                                                 <rect key="frame" x="151" y="0.0" width="68" height="28"/>
@@ -1652,6 +1673,9 @@
 Gw
 </string>
                                                 </buttonCell>
+                                                <connections>
+                                                    <action selector="cancelBtnClicked:" target="XfG-lQ-9wD" id="gs8-4C-Cyu"/>
+                                                </connections>
                                             </button>
                                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="F6P-sE-PpM">
                                                 <rect key="frame" x="99" y="-7" width="59" height="32"/>
@@ -1662,6 +1686,9 @@ Gw
 DQ
 </string>
                                                 </buttonCell>
+                                                <connections>
+                                                    <action selector="okBtnClicked:" target="XfG-lQ-9wD" id="aDE-JX-G5S"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <visibilityPriorities>
@@ -1692,6 +1719,31 @@ DQ
                             <constraint firstItem="t9Q-66-nXe" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="u3T-cQ-JkE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fridayBtn" destination="QGR-Fc-yjh" id="v3f-s8-BbC"/>
+                        <outlet property="fridayCloseTimePicker" destination="jDQ-b3-YSL" id="Dld-xm-byH"/>
+                        <outlet property="fridayOpenTimePicker" destination="GKs-II-Osh" id="7Bj-kf-Bhl"/>
+                        <outlet property="mondayBtn" destination="DTs-dW-Bd4" id="e1H-Qg-0Po"/>
+                        <outlet property="mondayCloseTimePicker" destination="HQi-Z6-PU9" id="e5o-ap-L2C"/>
+                        <outlet property="mondayOpenTimePicker" destination="N8y-ad-Rcy" id="0rK-oL-ym6"/>
+                        <outlet property="saturdayBtn" destination="vOM-Or-wRA" id="yfg-I6-bOv"/>
+                        <outlet property="saturdayCloseTimePicker" destination="hfK-Xw-ZZC" id="rCu-KU-bNS"/>
+                        <outlet property="saturdayOpenTimePicker" destination="VXA-ST-jLF" id="8E1-WF-NCI"/>
+                        <outlet property="shopAddressTextField" destination="1QC-K7-6V9" id="MkT-bz-tob"/>
+                        <outlet property="shopNameTextField" destination="0Hs-qM-hYi" id="4ym-YV-5br"/>
+                        <outlet property="sundayBtn" destination="kPb-Fp-9jn" id="zRp-58-KLQ"/>
+                        <outlet property="sundayCloseTimePicker" destination="6LL-dR-xMC" id="cGj-ma-GEo"/>
+                        <outlet property="sundayOpenTimePicker" destination="vYA-Dz-gty" id="aW5-pq-C0j"/>
+                        <outlet property="thursdayBtn" destination="fho-E3-Xhb" id="IPG-e2-O8A"/>
+                        <outlet property="thursdayCloseTimePicker" destination="LIK-3X-aI3" id="slc-Id-sAk"/>
+                        <outlet property="thursdayOpenTimePicker" destination="DE2-lo-15e" id="BHJ-Ak-Und"/>
+                        <outlet property="tuesdayBtn" destination="lZR-vl-okP" id="GZr-e0-MJm"/>
+                        <outlet property="tuesdayCloseTimePicker" destination="X9V-sM-9P8" id="N9O-vJ-mEK"/>
+                        <outlet property="tuesdayOpenTimePicker" destination="owB-Ce-cIZ" id="hHq-Q0-LtS"/>
+                        <outlet property="wednesdayBtn" destination="6US-9z-0Hu" id="OuD-Ph-TOo"/>
+                        <outlet property="wednesdayCloseTimePicker" destination="eoY-7L-MmF" id="neQ-ig-gdz"/>
+                        <outlet property="wednesdayOpenTimePicker" destination="8Iu-0b-18B" id="rsH-41-dbv"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
