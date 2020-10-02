@@ -1,5 +1,5 @@
 # ShopTask
-MacOS App - is sollution for test task from one famouse IT Company
+MacOS App - is solution for test task from one famouse IT Company
 Started on: 2020-09-26
 Recent Status: Main task algorithm fully finished. UI and it's functionality in progress
 
