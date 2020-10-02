@@ -46,8 +46,12 @@
 			isa = PBXGroup;
 			children = (
 				3A8F10ED251FCC00002AA5C1 /* TableViewController.swift */,
+<<<<<<< HEAD
 				3A8F10EF251FCC2B002AA5C1 /* DetailViewController.swift */,
 				C288D6A7251F2E1E008CBE82 /* EditDetailsViewController.swift */,
+=======
+				3A8F115425244DCE002AA5C1 /* dataSource.swift */,
+>>>>>>> parent of 6cae726... Move "dataSource" file out of "ViewControllers" folder
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -76,7 +80,6 @@
 				C288D6AB251F2E1F008CBE82 /* Main.storyboard */,
 				3A8F10F1251FCC66002AA5C1 /* ViewControllers */,
 				C288D6B6251F2FA4008CBE82 /* Shop.swift */,
-				3A8F115425244DCE002AA5C1 /* dataSource.swift */,
 				C288D6AE251F2E1F008CBE82 /* Info.plist */,
 				C288D6AF251F2E1F008CBE82 /* ShopTask.entitlements */,
 			);
