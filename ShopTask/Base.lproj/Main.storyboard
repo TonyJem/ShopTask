@@ -1074,10 +1074,10 @@
             </objects>
             <point key="canvasLocation" x="675" y="1922"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit Details View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="ShopTask" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="EditDetailsViewController" customModule="ShopTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="340" height="580"/>
                         <autoresizingMask key="autoresizingMask"/>

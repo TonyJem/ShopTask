@@ -8,7 +8,7 @@
 import Foundation
 import Cocoa
 
-class ViewController: NSViewController {
+class EditDetailsViewController: NSViewController {
     //    MARK: - Outlets
     @IBOutlet var shopNameTextField: NSTextField!
     @IBOutlet var shopAddressTextField: NSTextField!
@@ -52,6 +52,13 @@ class ViewController: NSViewController {
     //    MARK: - Properties
     
     //    MARK: - Start Here
+    
+    override func viewWillAppear() {
+        
+        
+        
+        mondayBtn.isEnabled = false
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
