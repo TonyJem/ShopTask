@@ -47,7 +47,18 @@ class DetailViewController: NSViewController {
     }
     
     //    MARK: - Actions:
-
+    @IBAction func editShopDetailsBtnClicked(_ sender: NSButton) {
+        self.performSegue(withIdentifier: "editDetails", sender: self)
+        
+    }
+    
+    override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "editDetails"){
+                let editDetailsVC = segue.destinationController as! EditDetailsViewController
+            editDetailsVC.testName = selectedShop.name
+        }
+    }
+    
     //    MARK: - Methods:
     func showDetails(for shop: Shop) {
         shopNameLabel.stringValue = shop.name
@@ -175,6 +186,9 @@ class DetailViewController: NSViewController {
         }
     }
 }
+
+
+
 
 // MARK: - Extentions for managing TableView:
 extension DetailViewController: NSTableViewDataSource {

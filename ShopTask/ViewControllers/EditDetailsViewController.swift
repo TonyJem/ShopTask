@@ -50,6 +50,8 @@ class EditDetailsViewController: NSViewController {
     
     //    MARK: - Properties
     
+    var testName: String?
+    
     //    MARK: - Start Here
     
     override func viewWillAppear() {
@@ -58,6 +60,13 @@ class EditDetailsViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let testName = testName {
+            shopNameTextField.stringValue = testName
+        } else {
+            shopNameTextField.stringValue = "No String passed!"
+        }
+        
     }
     
     override var representedObject: Any? {
