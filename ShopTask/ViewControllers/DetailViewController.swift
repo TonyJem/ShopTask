@@ -46,6 +46,8 @@ class DetailViewController: NSViewController {
         editShopDetailsBtn.isEnabled = false
     }
     
+    //    MARK: - Actions:
+
     //    MARK: - Methods:
     func showDetails(for shop: Shop) {
         shopNameLabel.stringValue = shop.name

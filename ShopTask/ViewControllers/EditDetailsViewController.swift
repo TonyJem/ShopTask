@@ -45,7 +45,6 @@ class EditDetailsViewController: NSViewController {
     /// friday
     /// saturday
     /// sunday
-    /// var shopToEdit: Shop!
     
     
     

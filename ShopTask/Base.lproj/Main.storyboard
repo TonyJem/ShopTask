@@ -1035,7 +1035,8 @@
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
                                         <connections>
-                                            <segue destination="B8D-0N-5wS" kind="show" id="JYz-Ma-F5r"/>
+                                            <action selector="editShopDetailsBtnClicked:" target="dlI-aQ-FSZ" id="Qxr-uv-hEd"/>
+                                            <segue destination="B8D-0N-5wS" kind="show" identifier="" id="JYz-Ma-F5r"/>
                                         </connections>
                                     </button>
                                 </subviews>
