@@ -55,7 +55,7 @@ class DetailViewController: NSViewController {
     override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
         if(segue.identifier == "editDetails"){
                 let editDetailsVC = segue.destinationController as! EditDetailsViewController
-            editDetailsVC.testName = selectedShop.name
+            editDetailsVC.shopToEdit = selectedShop
         }
     }
     
