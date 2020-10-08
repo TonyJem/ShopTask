@@ -13,9 +13,9 @@ Recent Status: Main task algorithm fully finished. UI and it's functionality in 
 To be described later...
 
 #### Here I newly learned how to:
-  1. Create and manage TableView's collumns prorammaticaly.
+  1. Create and manage TableView's collumns programmaticaly;
   
-  2. (to be added)
+  2. Parse data between View Controlers;
   
   3. (to be added)
   
